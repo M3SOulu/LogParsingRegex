@@ -1,0 +1,53 @@
+reverse mapping checking getaddrinfo for (.*) failed - POSSIBLE BREAK-IN ATTEMPT!
+Address (\S*) maps to (\S*), but this does not map back to the address - POSSIBLE BREAK-IN ATTEMPT!
+input_userauth_request: invalid user\s+(\S*) \[preauth\]
+syslogin_perform_logout: logout\(\) returned an error
+pam_unix\(sshd:auth\): check pass; user (\S*)
+pam_unix\(sshd:auth\): authentication failure; logname=(\S*) uid=(\S*) euid=(\S*) tty=(\S*) ruser=(\S*) rhost=(\S*)
+pam_unix\(sshd:auth\): authentication failure; logname=(\S*) uid=(\S*) euid=(\S*) tty=(\S*) ruser=(\S*) rhost=(\S*)  user=(\S*)
+pam_unix\(sshd:session\): session opened for user\s+(\S+) by \(uid=(\S*)\)
+pam_unix\(sshd:session\): session closed for user\s+(\S+)
+Failed password for invalid user\s+(\S*) from (\S*) port (\S*) ssh2
+Failed password for\s+(\S*) from (\S*) port (\S*) ssh2
+Failed none for invalid user\s+(\S*) from (\S+) port (\S+) ssh2
+Connection closed by (\S*) \[preauth\]
+Disconnecting: Too many authentication failures for (\S*) \[preauth\]
+Invalid user (.*) from (\S*)
+Received disconnect from (\S+): (\S+): Bye Bye \[preauth\]
+message repeated (\S+) times: \[ Failed password for (\S+) from (\S+) port (\S+) ssh2\]
+PAM (\S+) more authentication failures; logname=(\S*) uid=(\S*) euid=(\S*) tty=(\S*) ruser=(\S*) rhost=(\S*)
+PAM (\S+) more authentication failures; logname=(\S*) uid=(\S*) euid=(\S*) tty=(\S*) ruser=(\S*) rhost=(\S+)  user=(\S*)
+PAM (\S+) more authentication failure; logname=(\S*) uid=(\S*) euid=(\S*) tty=(\S*) ruser=(\S*) rhost=(\S*)
+PAM (\S+) more authentication failure; logname=(\S*) uid=(\S*) euid=(\S*) tty=(\S*) ruser=(\S*) rhost=(\S*)  user=(\S*)
+PAM service\(sshd\) ignoring max retries; (.*)
+Did not receive identification string from (\S+)
+Received disconnect from (\S+): (\S+): Closed due to user request. \[preauth\]
+Received disconnect from (\S+): (\S+): disconnect \[preauth\]
+Received disconnect from (\S+): (\S+): disconnected by user
+Received disconnect from (\S+): (\S+): disconnected by user \[preauth\]
+Received disconnect from (\S+): (\S+):  \[preauth\]
+Received disconnect from (\S+): (\S+):
+Received disconnect from (\S+): (\S+): Client disconnecting normally \[preauth\]
+Received disconnect from (\S+): (\S+): Disconnect requested by Windows SSH Client.
+Received disconnect from (\S+): (\S+): Session closed \[preauth\]
+Received disconnect from (\S+): (\S+): Normal Shutdown, Thank you for playing \[preauth\]
+Received disconnect from (\S+): (\S+): Normal Shutdown \[preauth\]
+error: connect_to (\S+) port (\S+): failed.
+error: Received disconnect from (\S+): (\S+): No more user authentication methods available. \[preauth\]
+error: Received disconnect from (\S+): (\S+): User request \[preauth\]
+error: Received disconnect from (\S+): (\S+): Authentication cancelled by user. \[preauth\]
+error: Received disconnect from (\S+): (\S+): (\S+): Auth fail \[preauth\]
+error: Received disconnect from (\S+): (\S+): (\S+): Read timed out \[preauth\]
+error: Received disconnect from (\S+): (\S+): (\S+): timeout in waiting for rekeying process. \[preauth\]
+error: Received disconnect from (\S+): (\S+): (\S+): User authentication canceled by user \[preauth\]
+error: Received disconnect from (\S+): (\S+): (\S+): reject HostKey: (\S+) \[preauth\]
+error: Received disconnect from (\S+): (\S+): (\S+): Auth cancel \[preauth\]
+Accepted password for\s+(\S*) from (\S+) port (\S+) ssh2
+fatal: Write failed: Connection reset by peer \[preauth\]
+fatal: Read from socket failed: Connection reset by peer \[preauth\]
+fatal: no hostkey alg \[preauth\]
+Bad protocol version identification '(.*)' from (\S+) port (\S+)
+Bad packet length (\S+). \[preauth\]
+Disconnecting: Packet corrupt \[preauth\]
+Corrupted MAC on input. \[preauth\]
+Server listening on (\S+) port (\S+).
