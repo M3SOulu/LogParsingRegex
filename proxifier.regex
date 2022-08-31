@@ -1,0 +1,7 @@
+([^\s]+) close, (.*) sent, (.*) received, lifetime (.*)
+([^\s]+) open through proxy ([^\s]+) ([^\s]+)
+Proxy server cannot establish a connection with the target, status code ([^\s]+)
+([^\s]+) error : A connection request was canceled before the completion.
+Proxy closed the connection unexpectedly.
+Could not resolve ([^\s]+) error ([^\s]+)
+connection attempt failed with error ([^\s]+)
