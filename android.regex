@@ -1,0 +1,62 @@
+Animating brightness: target=([^\s]+), rate=([^\s]+)
+action:([^\s]+), mPermissionType:([^\s]+)
+DisplayPowerController updatePowerState mPendingRequestLocked=policy=([^\s]+), useProximitySensor=([^\s]+), useProximitySensorbyPhone=([^\s]+), screenBrightness=([^\s]+), screenAutoBrightnessAdjustment=([^\s]+), brightnessSetByUser=([^\s]+), useAutoBrightness=([^\s]+), blockScreenOn=([^\s]+), lowPowerMode=([^\s]+), boostScreenBrightness=([^\s]+), dozeScreenBrightness=([^\s]+), dozeScreenState=([^\s]+), useTwilight=([^\s]+), useSmartBacklight=([^\s]+), brightnessWaitMode=([^\s]+), brightnessWaitRet=([^\s]+), screenAutoBrightness=([^\s]+), userId=([^\s]+)
+DisplayPowerState Updating screen state: state=([^\s]+), backlight=([^\s]+)
+DisplayPowerStatesetColorFadeLevel: level=([^\s]+)
+back light level before map = ([^\s]+)
+onScreenTurnedOn\(\)
+Display ready!
+Finished business\.\.\.
+Caller checkPermission fail
+KGSvcCall onScreenTurnedOn.
+notifyScreenTurnedOn
+handleNotifyScreenTurnedOn
+onScreenTurnedOn
+getNextIndex: ([^\s]+); from ([^\s]+) to ([^\s]+); size: ([^\s]+)
+report msg is :{picture: ([^\s]+)}
+report result = falsereport type:([^\s]+) msg:{picture: ([^\s]+), channelId: ([^\s]+)}
+Screen already turned on at: ([^\s]+)
+Split enqueueing broadcast \[callerApp\]:ProcessRecord\{(.+)\}
+EventCenter Get :([^\s]+)
+Get no-perm notification callback ([^\s]+)
+ScreenState present
+([^\s]+)\|upDateHealthNotification\(\)\|([^\s]+)\|([^\s]+)\|([^\s]+)
+ITrafficInfo:ITrafficInfo create 301updateBytes = (\S+)
+(\S+)\|rebuild notification
+ContentChange for slot: (\S+)
+onChange selfChange:(\S+) uri.toString\(\):(\S+) mIsObserveAutoBrightnessChange:(\S+)
+case xxx, not a fingerprint unlock
+ready=(\S+),policy=(\S+),wakefulness=(\S+),wksummary=(\S+),uasummary=(\S+),bootcompleted=(\S+),boostinprogress=(\S+),waitmodeenable=(\S+),mode=(\S+),manual=(\S+),auto=(\S+),adj=(\S+)userId=(\S+)
+PowerManagerNotifier onWakefulnessChangeFinished mInteractiveChanging=(\S+), mInteractive=(\S+)
+APS brightness=(\S+),ConvertToPercentage=(\S+)
+getSeekBarProgress isAutoMode:(\S+) current brightness:(\S+) percentage:(\S+)
+updateSlider(\S+) seekBarProgress:(\S+)
+mSeekListener onProgressChanged progress:(\S+) fromUser:(\S+)
+msg = (\S+) received
+enqueueNotificationInternal: pkg=(\S+) id=(\S+) notification=Notification\(pri=(\S+) contentView=(\S+) vibrate=(\S+) sound=(\S+) defaults=(\S+) flags=(\S+) color=(\S+) vis=(\S+)\)
+enqueueNotificationInternal: n.getKey = (\S+)\|(\S+)\|(\S+)\|(\S+)\|(\S+)
+presently, hw_update_color_temp_for_rg_led interface not achieved.
+DialpadFragment mBroadcastReceiver action:(\S+)
+disableEffects=(\S+) canInterrupt=(\S+) once update: (\S+)
+onNotificationPosted: StatusBarNotification\(pkg=(\S+) user=UserHandle\{(\S+)\} id=(\S+) tag=(\S+) key=(\S+)\|(\S+)\|(\S+)\|(\S+)\|(\S+): Notification\(pri=(\S+) contentView=(\S+) vibrate=(\S+) sound=(\S+) defaults=(\S+) flags=(\S+) color=(\S+) vis=(\S+)\)\) important=(\S+), post=(\S+), when=(\S+), vis=(\S+), userid=(\S+)
+updateNotification\(StatusBarNotification\(pkg=(\S+) user=UserHandle\{(\S+)} id=(\S+) tag=(\S+) key=(\S+)\|(\S+)\|(\S+)\|(\S+)\|(\S+): Notification\(pri=(\S+) contentView=(\S+) vibrate=(\S+) sound=(\S+) defaults=(\S+) flags=(\S+) color=(\S+) vis=(\S+)\)\)\)
+updateTint: tint=(\S+)
+No peeking: unimportant notification: (\S+)\|(\S+)\|(\S+)\|(\S+)\|(\S+)
+applyInPlace=(\S+) shouldPeek=(\S+) alertAgain=(\S+)
+onEntryUpdated:(\S+)\|(\S+)\|(\S+)\|(\S+)\|(\S+)
+onEntryAdded:(\S+)\|(\S+)\|(\S+)\|(\S+)\|(\S+), group=(\S+)\|(\S+)\|(\S+)\|(\S+)\|(\S+)
+reusing notification for key: (\S+)\|(\S+)\|(\S+)\|(\S+)\|(\S+)
+RetryTaskController:mTaskList is (\S+)
+updateNotificationShade
+removeNotificationChildren
+showNotificationAll
+main{(\S+)} PushService.onStartCommand\((\S+)\) Push Service Start by  userEvent
+uid:(\S+) pid:(\S+) PhoneStateListener.LISTEN_CELL_LOCATION:(\S+) events:(\S+)
+LISTEN_CELL_LOCATION uid:(\S+)
+WatchThread\{(\S+)\} TcpCirChannel.shutdown\((\S+)\) Login_By_Step-> shut down now connect
+\[Thermal_Hw\] temperature_valid, battery : temperature is invalid, invalid temperatrue is (\S+)
+\[Thermal_Hw\] temperature_filter: get invalid temperature, use old temp
+transferRemoteInputFocus: (\S+)
+updateClipping isOverlap:(\S+)
+updateDimmedActivatedHideSensitive overlap:(\S+)
+\[ACC\]processReportInd: X: (\S+) Y: (\S+) Z: (\S+)  x_offset:(\S+) y_offset:(\S+) z_offset:(\S+)

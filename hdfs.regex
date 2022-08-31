@@ -1,0 +1,30 @@
+Adding an already existing block ([^\s]+)
+Verification succeeded for ([^\s]+)
+([^\s]+) Served block ([^\s]+) to ([^\s]+)
+([^\s]+):Got exception while serving ([^\s]+) to ([^\s]+)
+Receiving block ([^\s]+) src: ([^\s]+) dest: ([^\s]+)
+Received block ([^\s]+) src: ([^\s]+) dest: ([^\s]+) of size ([^\s]+)
+writeBlock ([^\s]+) received exception (.+)
+PacketResponder ([^\s]+) for block ([^\s]+) Interrupted\.
+Received block ([^\s]+) of size ([^\s]+) from ([^\s]+)
+PacketResponder ([^\s]+) ([^\s]+) Exception (.+)
+PacketResponder ([^\s]+) for block ([^\s]+) terminating
+([^\s]+):Exception writing block ([^\s]+) to mirror ([^\s]+)
+Receiving empty packet for block ([^\s]+)
+Exception in receiveBlock for block ([^\s]+) (.+)
+Changing block file offset of block ([^\s]+) from ([^\s]+) to ([^\s]+) meta file offset to ([^\s]+)
+([^\s]+):Transmitted block ([^\s]+) to ([^\s]+)
+([^\s]+):Failed to transfer ([^\s]+) to ([^\s]+) got (.+)
+([^\s]+) Starting thread to transfer block ([^\s]+) to ([^\s]+)(?:, ([^\s]+))?
+Reopen Block ([^\s]+)
+Unexpected error trying to delete block ([^\s]+)\. BlockInfo not found in volumeMap\.
+Deleting block ([^\s]+) file ([^\s]+)
+BLOCK\* NameSystem.allocateBlock: ([^\s]+) ([^\s]+)
+BLOCK\* NameSystem.delete: ([^\s]+) is added to invalidSet of ([^\s]+)
+BLOCK\* Removing block ([^\s]+) from neededReplications as it does not belong to any file\.
+BLOCK\* ask ([^\s]+) to replicate ([^\s]+) to datanode\(s\) (.+)
+BLOCK\* NameSystem.addStoredBlock: blockMap updated: ([^\s]+) is added to ([^\s]+) size ([^\s]+)
+BLOCK\* NameSystem.addStoredBlock: Redundant addStoredBlock request received for ([^\s]+) on ([^\s]+) size ([^\s]+)
+BLOCK\* NameSystem.addStoredBlock: addStoredBlock request received for ([^\s]+) on ([^\s]+) size ([^\s]+) But it does not belong to any file.
+PendingReplicationMonitor timed out block ([^\s]+)
+BLOCK\* ask ([^\s]+) to delete ([^\s]+)

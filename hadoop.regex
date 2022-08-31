@@ -1,0 +1,123 @@
+Created MRAppMaster for application ([^\s]+)
+Executing with tokens:
+Connecting to ResourceManager at ([^\s]+)
+Starting Socket Reader ([^\s]+) for port ([^\s]+)
+blacklistDisablePercent is ([^\s]+)
+Upper limit on the thread pool size is ([^\s]+)
+loaded properties from ([^\s]+)
+Adding protocol ([^\s]+) to the server
+Logging to ([^\s]+) via ([^\s]+)
+maxContainerCapability: ([^\s]+) ([^\s]+)
+OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+Emitting job history data to the timeline server is not enabled
+Not uberizing ([^\s]+) because: not enabled; too many maps; too much input;
+Jetty bound to port ([^\s]+)
+MRAppMaster metrics system started
+Resolved ([^\s]+) to /default-rack
+Http request log for http.requests.mapreduce is not defined
+Added filter AM_PROXY_FILTER \(class=([^\s]+)\) to context static
+Adding job token for ([^\s]+) to jobTokenSecretManager
+adding path spec: /ws/*
+Input size for job ([^\s]+) = ([^\s]+) Number of splits = ([^\s]+)
+Using callQueue class java.util.concurrent.LinkedBlockingQueue
+Extract ([^\s]+) to ([^\s]+)
+Added global filter 'safety' ([^\s]+)
+MRAppMaster launching normal, non-uberized, multi-container job ([^\s]+)
+Kind: YARN_AM_RM_TOKEN, Service: , Ident: \(appAttemptId { application_id { id: ([^\s]+) cluster_timestamp: ([^\s]+) } attemptId: ([^\s]+) } keyId: ([^\s]+)\)
+Web app /mapreduce started at ([^\s]+)
+IPC Server listener on ([^\s]+) starting
+nodeBlacklistingEnabled:([^\s]+)
+([^\s]+) TaskAttempt Transitioned from ([^\s]+) to ([^\s]+)
+Processing the event EventType: JOB_SETUP
+Added filter AM_PROXY_FILTER \(class=([^\s]+)\) to context mapreduce
+adding path spec: /mapreduce/*
+Using mapred newApiCommitter.
+Instantiated MRClientService at ([^\s]+)
+queue: default
+Number of reduces for job ([^\s]+) = ([^\s]+)
+maxTaskFailuresPerNode is ([^\s]+)
+OutputCommitter set in config null
+([^\s]+) Task Transitioned from ([^\s]+) to ([^\s]+)
+Registered webapp guice modules
+Registering class ([^\s]+) for class ([^\s]+)
+yarn.client.max-cached-nodemanagers-proxies : ([^\s]+)
+IPC Server Responder: starting
+Started ([^\s]+)
+Default file system ([^\s]+)
+Scheduled snapshot period at ([^\s]+) second\(s\).
+Size of ([^\s]+) is ([^\s]+)
+Received completed container ([^\s]+)
+Container exited with a non-zero exit code ([^\s]+)
+Num completed Tasks: ([^\s]+)
+DFSOutputStream ResponseProcessor exception for block ([^\s]+)
+Assigned container ([^\s]+) to ([^\s]+)
+Assigned to reduce
+Shuffle port returned by ContainerManager for ([^\s]+) : ([^\s]+)
+Launching ([^\s]+)
+Progress of TaskAttempt ([^\s]+) is : ([^\s]+)
+Done acknowledgement from ([^\s]+)
+Processing the event EventType: ([^\s]+) for container ([^\s]+) taskAttempt ([^\s]+)
+After Scheduling: ([^\s]+)
+Task succeeded with attempt ([^\s]+)
+Scheduling a redundant attempt for task ([^\s]+)
+Event Writer setup for JobId: ([^\s]+) File: ([^\s]+)
+Error Recovery for block ([^\s]+) in pipeline ([^\s]+) ([^\s]+) bad datanode ([^\s]+)
+([^\s]+):<memory:([^\s]+), vCores:([^\s]+)>
+Before Scheduling: PendingReds:([^\s]+) ScheduledMaps:([^\s]+) ScheduledReds:([^\s]+) AssignedMaps:([^\s]+) AssignedReds:([^\s]+) CompletedMaps:([^\s]+) CompletedReds:([^\s]+) ContAlloc:([^\s]+) ContRel:([^\s]+) HostLocal:([^\s]+) RackLocal:([^\s]+)
+JVM with ID : ([^\s]+) asked for a task
+JVM with ID: ([^\s]+) given task: ([^\s]+)
+TaskAttempt: ([^\s]+) using containerId: ([^\s]+) on NM: ([^\s]+)
+Opening proxy : ([^\s]+)
+The ([^\s]+) file on the remote FS is ([^\s]+)
+Container killed on request. Exit code is ([^\s]+)
+DFSOutputStream ResponseProcessor exception for block ([^\s]+)
+Reduce slow start threshold reached. Scheduling reduces.
+Auth successful for ([^\s]+) (auth:SIMPLE)
+Got allocated containers ([^\s]+)
+Putting shuffle token in serviceData
+([A-Z_]+) ([^\s]+)
+MapCompletionEvents request from ([^\s]+) startIndex ([^\s]+) maxEvents ([^\s]+)
+Auth successful for ([^\s]+) \(auth:([A-Z]+)\)
+Diagnostics report from ([^\s]+): Container killed by the ([^\s]+).
+([^\s]+): Bad response ERROR for block ([^\s]+) from datanode ([^\s]+)
+DFSOutputStream ResponseProcessor exception  for block ([^\s]+)
+After Scheduling: PendingReds:([^\s]+) ScheduledMaps:([^\s]+) ScheduledReds:([^\s]+) AssignedMaps:([^\s]+) AssignedReds:([^\s]+) CompletedMaps:([^\s]+) CompletedReds:([^\s]+) ContAlloc:([^\s]+) ContRel:([^\s]+) HostLocal:([^\s]+) RackLocal:([^\s]+)
+getResources\(\) for ([^\s]+): ask=([^\s]+) release= ([^\s]+) newContainers=([^\s]+) finishedContainers=([^\s]+) resourcelimit=<memory:([^\s]+), vCores:([^\s]+)> knownNMs=([^\s]+)
+We launched ([^\s]+) speculations.  Sleeping ([^\s]+) milliseconds.
+DefaultSpeculator.addSpeculativeAttempt -- we are speculating ([^\s]+)
+Ramping up ([^\s]+)
+completedMapPercent ([^\s]+) totalResourceLimit:<memory:([^\s]+), vCores:([^\s]+)> finalMapResourceLimit:<memory:([^\s]+), vCores:([^\s]+)> finalReduceResourceLimit:<memory:([^\s]+), vCores:([^\s]+)> netScheduledMapResource:<memory:([^\s]+), vCores:([^\s]+)> netScheduledReduceResource:<memory:([^\s]+), vCores:([^\s]+)>
+Recalculating schedule, headroom=<memory:([^\s]+), vCores:([^\s]+)>
+Reduce slow start threshold not met. completedMapsForReduceSlowstart ([^\s]+)
+Adding ([^\s]+) tokens and ([^\s]+) secret keys for ([^\s]+) use for launching container
+adding path spec: ([^\s]+)
+([^\s]+) Transitioned from ([^\s]+) to ([^\s]+)
+Kind: mapreduce.job, Service: ([^\s]+), Ident: \(([^\s]+)\)
+Sleeping for ([^\s]+) before retrying again. Got null now.
+MapTask metrics system started
+Retrying connect to server: ([^\s]+). Already tried ([^\s]+) time\(s\); maxRetries=([^\s]+)
+Retrying connect to server: ([^\s]+). Already tried ([^\s]+) time\(s\); retry policy is (.+)
+Diagnostics report from ([^\s]+) Container released on a \*lost\* node
+Killing ([^\s]+) because it is running on unusable ([^\s]+)
+Stopped JobHistoryEventHandler\. super\.stop\(\)
+Moved tmp to done: ([^\s]+)
+Using ResourceCalculatorProcessTree : ([^\s]+)
+ProcfsBasedProcessTree currently is supported only on Linux.
+(.+) is deprecated. Instead, use (.+)
+([^\s]+) for child: ([^\s]+)
+Copied to done location: ([^\s]+)
+soft limit at ([^\s]+)
+mapreduce.task.io.sort.mb: ([^\s]+)
+Processing split: ([^\s]+)
+Copying ([^\s]+) to ([^\s]+)
+(/history/done_intermediate/msrabi/(?:.+))
+Excluding datanode ([^\s]+)
+Abandoning ([^\s]+)
+bufstart = ([^\s]+) bufvoid = ([^\s]+)
+Calling stop for all the services
+Stopping JobHistoryEventHandler. Size of the outstanding queue size is ([^\s]+)
+
+RMCommunicator notified that shouldUnregistered is: ([^\s]+)
+Notify ([^\s]+) isAMLastRetry: ([^\s]+)
+JobHistoryEventHandler notified that forceJobCompletion is ([^\s]+)
+Exception in ([^\s]+)
