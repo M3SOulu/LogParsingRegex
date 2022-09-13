@@ -2,22 +2,21 @@ Animating brightness: target=([^\s]+), rate=([^\s]+)
 action:([^\s]+), mPermissionType:([^\s]+)
 DisplayPowerController updatePowerState mPendingRequestLocked=policy=([^\s]+), useProximitySensor=([^\s]+), useProximitySensorbyPhone=([^\s]+), screenBrightness=([^\s]+), screenAutoBrightnessAdjustment=([^\s]+), brightnessSetByUser=([^\s]+), useAutoBrightness=([^\s]+), blockScreenOn=([^\s]+), lowPowerMode=([^\s]+), boostScreenBrightness=([^\s]+), dozeScreenBrightness=([^\s]+), dozeScreenState=([^\s]+), useTwilight=([^\s]+), useSmartBacklight=([^\s]+), brightnessWaitMode=([^\s]+), brightnessWaitRet=([^\s]+), screenAutoBrightness=([^\s]+), userId=([^\s]+)
 DisplayPowerState Updating screen state: state=([^\s]+), backlight=([^\s]+)
-DisplayPowerStatesetColorFadeLevel: level=([^\s]+)
+DisplayPowerStatesetColorFadeLevel: level=(\S+)
 back light level before map = ([^\s]+)
 onScreenTurnedOn\(\)
 Display ready!
 Finished business\.\.\.
 Caller checkPermission fail
-KGSvcCall onScreenTurnedOn.
 notifyScreenTurnedOn
 handleNotifyScreenTurnedOn
 onScreenTurnedOn
 getNextIndex: ([^\s]+); from ([^\s]+) to ([^\s]+); size: ([^\s]+)
-report msg is :{picture: ([^\s]+)}
-report result = falsereport type:([^\s]+) msg:{picture: ([^\s]+), channelId: ([^\s]+)}
+report msg is :\{picture: ([^\s]+)\}
+report result = falsereport type:([^\s]+) msg: \{picture: ([^\s]+), channelId: ([^\s]+)\}
 Screen already turned on at: ([^\s]+)
 Split enqueueing broadcast \[callerApp\]:ProcessRecord\{(.+)\}
-EventCenter Get :([^\s]+)
+EventCenter Get :(\S+)
 Get no-perm notification callback ([^\s]+)
 ScreenState present
 ([^\s]+)\|upDateHealthNotification\(\)\|([^\s]+)\|([^\s]+)\|([^\s]+)
@@ -30,7 +29,8 @@ ready=(\S+),policy=(\S+),wakefulness=(\S+),wksummary=(\S+),uasummary=(\S+),bootc
 PowerManagerNotifier onWakefulnessChangeFinished mInteractiveChanging=(\S+), mInteractive=(\S+)
 APS brightness=(\S+),ConvertToPercentage=(\S+)
 getSeekBarProgress isAutoMode:(\S+) current brightness:(\S+) percentage:(\S+)
-updateSlider(\S+) seekBarProgress:(\S+)
+updateSlider1 seekBarProgress:(\S+)
+updateSlider2 seekBarProgress:(\S+)
 mSeekListener onProgressChanged progress:(\S+) fromUser:(\S+)
 msg = (\S+) received
 enqueueNotificationInternal: pkg=(\S+) id=(\S+) notification=Notification\(pri=(\S+) contentView=(\S+) vibrate=(\S+) sound=(\S+) defaults=(\S+) flags=(\S+) color=(\S+) vis=(\S+)\)
@@ -50,7 +50,7 @@ RetryTaskController:mTaskList is (\S+)
 updateNotificationShade
 removeNotificationChildren
 showNotificationAll
-main{(\S+)} PushService.onStartCommand\((\S+)\) Push Service Start by  userEvent
+main\{(\S+)\} PushService.onStartCommand\((\S+)\) Push Service Start by  userEvent
 uid:(\S+) pid:(\S+) PhoneStateListener.LISTEN_CELL_LOCATION:(\S+) events:(\S+)
 LISTEN_CELL_LOCATION uid:(\S+)
 WatchThread\{(\S+)\} TcpCirChannel.shutdown\((\S+)\) Login_By_Step-> shut down now connect
@@ -60,3 +60,42 @@ transferRemoteInputFocus: (\S+)
 updateClipping isOverlap:(\S+)
 updateDimmedActivatedHideSensitive overlap:(\S+)
 \[ACC\]processReportInd: X: (\S+) Y: (\S+) Z: (\S+)  x_offset:(\S+) y_offset:(\S+) z_offset:(\S+)
+PowerManager_screenOn: DisplayPowerState Updating screen state: state=(\S+), backlight=(\S+)
+DisplayPowerController: Finished business...
+SendBroadcastPermission: action:(\S+), mPermissionType:(\S+)
+DisplayPowerController: Animating brightness: target=(\S+), rate=(\S+)
+HwSystemManager: ITrafficInfo:ITrafficInfo create (\S+)updateBytes = (\S+)
+OucScreenOnCounter: Screen already turned on at: (\S+)
+HwActivityManagerService: Split enqueueing broadcast \[(\S+)\]:ProcessRecord\{(\S+) (\S+):(\S+)\}
+KGWallpaper_Magazine: getNextIndex: (\S+); from (\S+) to (\S+); size: (\S+)
+report result = (\S+) type:(\S+) msg:\{picture: (\S+), channelId: (\S+)\}
+onChange selfChange:(\S+) uri.toString():(\S+) mIsObserveAutoBrightnessChange:(\S+)
+WatchThread\{(\S+)\} TcpClient.clearAll\((\S+):(\S+)\) ==================== TCP CLIENT CLEAR ALL ====================
+WatchThread\{(\S+)\} TcpClient.disconnect_i\((\S+):(\S+)\) ==================== TCP CLIENT DISCONNECT ====================
+WatchThread\{(\S+)\} TcpSocket.close\((\S+):(\S+)\) shutdown input: java.net.SocketException: Socket is closed
+WatchThread\{(\S+)\} TcpSocket.close\((\S+):(\S+)\) shutdown output: java.net.SocketException: Socket is closed
+WatchThread\{(\S+)\} TcpClientThread.connect\((\S+):(\S+)\) will connect to (\S+):(\S+)
+WatchThread\{(\S+)\} TcpClientThread.closeSocket\((\S+):(\S+)\) closed socket.
+WatchThread\{(\S+)\} TcpClientThread.disconnectSocket\((\S+):(\S+)\) disconnecting to (\S+):(\S+)
+WatchThread\{(\S+)\} TcpCirChannel.connect\((\S+):(\S+)\) Connect to server  address = \[(\S+),\]  port = (\S+)
+Create obj success use class (\S+)
+release:lock=(\S+), flg=(\S+), tag="(\S+)", name=(\S+), ws=(\S+), uid=(\S+), pid=(\S+)
+KGSvcCall onScreenTurnedOn\.
+tcp.recv\{(\S+)\} (\S+)\((\S+):(\S+)\) <<< WARN\((\S+)\) >>> java.net.SocketException: Socket closed
+InCallActivity - mScreenOnReceiver mCallEndOptionsDialog = (\S+)
+set\(PendingIntent\{(\S+): PendingIntentRecord\{(\S+) (\S+) broadcastIntent\}\}\) : type=(\S+) triggerAtTime=(\S+) win=(\S+) tElapsed=(\S+) maxElapsed=(\S+) interval=(\S+) flags=(\S+)
+GetAddrInfoHandler addr: (\S+) \{(\S+), (\S+), (\S+)\} (\S+)
+MagicLink2-BroadcastReceiver:====>ACTION_SCREEN_ON
+Releasing suspend blocker "PowerManagerService.WakeLocks".
+remove\(PendingIntent\{(\S+): PendingIntentRecord\{(\S+) (\S+) broadcastIntent\}\}\) changed bounds; rebatching
+tcp.conn\{(\S+)\} TcpSocket.connect_i\((\S+):(\S+)\) connecting to ip address (\S+)/(\S+)
+tcp.conn\{(\S+)\} TcpClientThread.connectSocket\((\S+):(\S+)\) connecting max (\S+) to (\S+):(\S+)
+tcp.recv\{(\S+)\} TcpClientThread.onReceiverWork\((\S+):(\S+)\) connected
+getRunningAppProcesses: caller (\S+) does not hold (\S+); limiting output
+shouldBlockLocation  ret:(\S+)
+(\S+)\|getTodayTotalSteps (\S+)
+(\S+)\|compensate (\S+) (\S+)
+(\S+)\|before compensate: cache step_(\S+)
+(\S+)\|after compensate: cache step_(\S+)
+(\S+)\|REPORT : (\S+) (\S+) (\S+) (\S+)
+onSignalStrengthsChanged signalStrength=SignalStrength: (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+)\|(\S+) level=(\S+) isSuspend=(\S+) levelOld=(\S+),mSignalStrength level=(\S+)
