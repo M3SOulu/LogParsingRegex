@@ -1,9 +1,9 @@
-Animating brightness: target=([^\s]+), rate=([^\s]+)
-action:([^\s]+), mPermissionType:([^\s]+)
-DisplayPowerController updatePowerState mPendingRequestLocked=policy=([^\s]+), useProximitySensor=([^\s]+), useProximitySensorbyPhone=([^\s]+), screenBrightness=([^\s]+), screenAutoBrightnessAdjustment=([^\s]+), brightnessSetByUser=([^\s]+), useAutoBrightness=([^\s]+), blockScreenOn=([^\s]+), lowPowerMode=([^\s]+), boostScreenBrightness=([^\s]+), dozeScreenBrightness=([^\s]+), dozeScreenState=([^\s]+), useTwilight=([^\s]+), useSmartBacklight=([^\s]+), brightnessWaitMode=([^\s]+), brightnessWaitRet=([^\s]+), screenAutoBrightness=([^\s]+), userId=([^\s]+)
-DisplayPowerState Updating screen state: state=([^\s]+), backlight=([^\s]+)
+Animating brightness: target=(\S+), rate=(\S+)
+action:(\S+), mPermissionType:(\S+)
+DisplayPowerController updatePowerState mPendingRequestLocked=policy=(\S+), useProximitySensor=(\S+), useProximitySensorbyPhone=(\S+), screenBrightness=(\S+), screenAutoBrightnessAdjustment=(\S+), brightnessSetByUser=(\S+), useAutoBrightness=(\S+), blockScreenOn=(\S+), lowPowerMode=(\S+), boostScreenBrightness=(\S+), dozeScreenBrightness=(\S+), dozeScreenState=(\S+), useTwilight=(\S+), useSmartBacklight=(\S+), brightnessWaitMode=(\S+), brightnessWaitRet=(\S+), screenAutoBrightness=(\S+), userId=(\S+)
+DisplayPowerState Updating screen state: state=(\S+), backlight=(\S+)
 DisplayPowerStatesetColorFadeLevel: level=(\S+)
-back light level before map = ([^\s]+)
+back light level before map = (\S+)
 onScreenTurnedOn\(\)
 Display ready!
 Finished business\.\.\.
@@ -11,15 +11,15 @@ Caller checkPermission fail
 notifyScreenTurnedOn
 handleNotifyScreenTurnedOn
 onScreenTurnedOn
-getNextIndex: ([^\s]+); from ([^\s]+) to ([^\s]+); size: ([^\s]+)
-report msg is :\{picture: ([^\s]+)\}
-report result = falsereport type:([^\s]+) msg: \{picture: ([^\s]+), channelId: ([^\s]+)\}
-Screen already turned on at: ([^\s]+)
-Split enqueueing broadcast \[callerApp\]:ProcessRecord\{(.+)\}
+getNextIndex: (\S+); from (\S+) to (\S+); size: (\S+)
+report msg is :\{picture: (\S+)\}
+report result = falsereport type:(\S+) msg: \{picture: (\S+), channelId: (\S+)\}
+Screen already turned on at: (\S+)
+Split enqueueing broadcast \[callerApp\]:ProcessRecord\{(\S+) (\S+)\}
 EventCenter Get :(\S+)
-Get no-perm notification callback ([^\s]+)
+Get no-perm notification callback (\S+)
 ScreenState present
-([^\s]+)\|upDateHealthNotification\(\)\|([^\s]+)\|([^\s]+)\|([^\s]+)
+(\S+)\|upDateHealthNotification\(\)\|(\S+)\|(\S+)\|(\S+)
 ITrafficInfo:ITrafficInfo create 301updateBytes = (\S+)
 (\S+)\|rebuild notification
 ContentChange for slot: (\S+)
@@ -99,3 +99,4 @@ shouldBlockLocation  ret:(\S+)
 (\S+)\|after compensate: cache step_(\S+)
 (\S+)\|REPORT : (\S+) (\S+) (\S+) (\S+)
 onSignalStrengthsChanged signalStrength=SignalStrength: (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+)\|(\S+) level=(\S+) isSuspend=(\S+) levelOld=(\S+),mSignalStrength level=(\S+)
+<(\S+) (\S+)> \[(\S+)\] SDK: (\S+) (\S+) (\S+) Level\[(\S+)\] magic[(\S+) (\S+)]:PubEvt_Close Getting a socket[(\S+)] from the Socket-table Failed!
