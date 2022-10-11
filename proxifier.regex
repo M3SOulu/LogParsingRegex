@@ -1,7 +1,15 @@
-([^\s]+) close, (.*) sent, (.*) received, lifetime (.*)
-([^\s]+) open through proxy ([^\s]+) ([^\s]+)
-Proxy server cannot establish a connection with the target, status code ([^\s]+)
-([^\s]+) error : A connection request was canceled before the completion.
-Proxy closed the connection unexpectedly.
-Could not resolve ([^\s]+) error ([^\s]+)
-connection attempt failed with error ([^\s]+)
+(\S+)(?: (\S+))? - (\S+) close, (\S+) bytes(?: \((\S+) (\S+)\))? sent, (\S+) bytes(?: \((\S+) (\S+)\))? received, lifetime (?:(\S+)|(<1) (sec))
+(\S+)(?: (\S+))? - (\S+) open through proxy (\S+) (\S+)
+(\S+)(?: (\S+))? - Proxy server cannot establish a connection with the target, status code (\S+)
+(\S+)(?: (\S+))? - (\S+) error : Could not connect through proxy (\S+) - Proxy closed the connection unexpectedly.
+(\S+)(?: (\S+))? - (\S+) error : A connection request was canceled before the completion.
+(\S+)(?: (\S+))? - (\S+) error : Could not connect to proxy (\S+) - connection attempt failed with error (\S+)
+(\S+)(?: (\S+))? - (\S+) error : Could not connect to proxy (\S+) - Could not resolve (\S+) error (\S+)
+(\S+)(?: (\S+))? - (\S+)(?: \((\S+)\))? error : Could not connect through proxy (\S+) - Proxy server cannot establish a connection with the target, status code (\S+)
+(\S+)(?: (\S+))? - Could not connect to proxy (\S+) - connection attempt failed with error (\S+)
+(\S+)(?: (\S+))? - Proxy closed the connection unexpectedly.
+(\S+)(?: (\S+))? - Could not resolve (\S+) error (\S+)
+(\S+)(?: (\S+))? - connection attempt failed with error (\S+)
+Warning : Connections do not originate from the applications. A third party network filter \(e.g. antivirus\) is detected.
+Error : Cannot send replay\. WriteFile failed with error (\S+)
+\(Automatic DNS mode detection\) Local DNS service is (\S+)\. Name Resolution through proxy is (\S+)\.
