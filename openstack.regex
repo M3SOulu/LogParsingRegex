@@ -43,9 +43,7 @@ Final resource view: name=([^\s]+) phys_ram=([^\s]+) used_ram=([^\s]+) phys_disk
 \[instance: ([^\s]+)\] Attempting claim: memory ([^\s]+) ([^\s]+), disk ([^\s]+) ([^\s]+), vcpus ([^\s]+) CPU
 \[instance: ([^\s]+)\] vcpu limit not specified, defaulting to unlimited
 \[instance: ([^\s]+)\] Total vcpu: ([^\s]+) VCPU, used: ([^\s]+) VCPU
-
 Error during ComputeManager._run_image_cache_manager_pass
-
 Auditing locally available compute resources for node ([^\s]+)
 Total usable vcpus: ([^\s]+) total allocated vcpus: ([^\s]+)
 While synchronizing instance power states, found ([^\s]+) instances in the database and ([^\s]+) instances on the hypervisor.
@@ -57,4 +55,4 @@ Running instance usage audit for host ([^\s]+) from ([^\s]+) ([^\s]+) to ([^\s]+
 Unable to validate token: Failed to fetch token data from identity server
 couldn't obtain the vcpu count from domain id: ([^\s]+) exception: Requested operation is not valid: cpu affinity is not supported
 Bad response code while validating token: ([^\s]+)
-Identity response: (.+)
+Identity response: (<!DOCTYPE) (HTML) (PUBLIC) ("-//IETF//DTD) (HTML) (2.0//EN">)
