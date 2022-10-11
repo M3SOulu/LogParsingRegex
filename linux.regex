@@ -1,0 +1,97 @@
+authentication failure; logname=(\S*) uid=(\S+) euid=(\S+) tty=(\S+) ruser=(\S*) rhost=(\S+) user=(\S+)
+Connection from (\S+) on illegal port
+audit\((\S+)\): avc: denied \{ getattr \} for pid=(\S+) exe=(\S+) path=(\S+) dev=(\S*) ino=(\S+) scontext=(\S+) tcontext=(\S+) tclass=(\S+)
+BIOS-e820: (\S+) - (\S+) \(reserved\)
+BIOS-e820: (\S+) - (\S+) \(usable\)
+(\S+) startup succeeded
+zapping low mappings\.
+(\S+) (\S+), log source = (\S+) started\.
+(\S+) HIGHMEM available\.
+(\S+) LOWMEM available\.
+On node 0 totalpages: 32430
+(\S+) zone: (\S+) pages, LIFO batch:(\S+)
+(\S+) (\S+) present.
+ACPI disabled because your bios is from (\S+) and too old
+You can enable it with acpi=force
+Built (\S+) zonelists
+ce: (\S+) startup succeeded
+mapped 4G/4G trampoline to (\S+).
+Initializing (\S+)
+CPU (\S+) (\S+), hard=(\S+) soft=(\S+)
+(\S+) hash table entries: (\S+) \(order (\S+): (\S+) bytes\)
+Detected (\S+) (\S+) processor.
+Using tsc for high-res timesource
+Console: colour VGA+ (\S+)
+Console: colour VGA+ 80x25
+Memory: (\S+) available \((\S+) kernel code, (\S+) reserved, (\S+) data, (\S+) init, (\S+) highmem\)
+Calibrating delay loop\.{3} (\S+) (\S+)
+(\S+) (\S+)(?: (\S+))? initialized
+SELinux:  Initializing.
+SELinux:  Starting in permissive mode
+SELinux: initialized \(dev (\S*), type (\S+)\), uses (\S+)(?: (\S+))?
+SELinux: initialized \(dev , type (\S+)\), not configured for labeling
+SELinux:  Completing initialization\.
+SELinux:  Disabled at runtime\.
+SELinux:  Registering netfilter hooks
+SELinux:  Unregistering netfilter hooks
+SELinux:  Setting up existing superblocks\.
+There is already a security framework initialized, register_security failed.
+Failure registering capabilities with the kernel
+selinux_register_security:  Registering secondary module capability
+(\S+)(?: (\S+)) hash table entries: (\S+) \(order: (\S+), (\S+) bytes\)
+Intel machine check reporting enabled on (\S+)\.
+restart\.
+BIOS-provided physical RAM map:
+Linux version (\S+) \((\S+)\) \((\S+) (\S+) (\S+) (\S+) \((\S+) (\S+) (\S+) (\S+)\)\) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+)
+Enabling fast FPU save and restore\.{3} done\.
+Intel machine check architecture supported\.
+CPU: (\S+) cache: (\S+)
+Out of Memory: Killed process (\S+) \((\S+)\)\.
+(?:(\S+) more )?authentication failure(?:s)?; logname=(\S*) uid=(\S*) euid=(\S*) tty=(\S*) ruser=(\S*) rhost=(\S*)(?:  user=(\S*))?
+Authentication failed from (\S*) \((\S*)\): Software caused connection abort
+Authentication failed from (\S*) \((\S*)\): Permission denied in replay cache code
+FAILED LOGIN (\S+) FROM \(null\) FOR (?:\s*|(\S+)), Authentication failure
+Kerberos authentication failed
+connection from (\S+) \((\S*)\) at (\S+) (\S+)\s+(\S+) (\S+) (\S+)
+Bluetooth: HCI device and connection manager initialized
+warning: can't get client address: Connection reset by peer
+ttloop:  read: Connection reset by peer
+Connection from (\S+) \((\S+)\)
+rsync: connection unexpectedly closed \((\S+) bytes read so far\)
+ttloop:  read: Connection timed out
+audit\((\S+)\): avc:  denied  \{ (\S+)(?: (\S+))? \} for\s+pid=(\S*)(?: exe=(\S*))?(?: name=(\S+))?(?: path=(\S*))?(?: dev=(\S*))?(?: ino=(\S*))?(?: scontext=(\S*))?(?: tcontext=(\S*))?(?: tclass=(\S*))?
+audit\((\S+)\):(?: syscall=(\S*))?(?: exit=(\S*))?(?: a0=(\S*))?(?: a1=(\S*))?(?: a2=(\S*))?(?: a3=(\S*))?(?: items=(\S*))?(?: pid=(\S*))?(?: loginuid=(\S*))?(?: uid=(\S*))?(?: gid=(\S*))?(?: euid=(\S*))?(?: suid=(\S*))?(?: fsuid=(\S*))?(?: egid=(\S*))?(?: sgid=(\S*))?(?: fsgid=(\S*))?
+audit\((\S+)\): item=(\S+)(?: name=(\S+))?(?: inode=(\S+))?(?: dev=(\S+))?
+audit\((\S+)\): initialized
+audit: initializing netlink socket \(\S+\)
+audit: (\S+) \(after initialization\)
+no longer listening on (\S+)
+(\S+) shutdown failed
+cdrom: open failed.
+bind failed \(Address already in use \(errno = 98\)\)\. service = telnet
+(\S+) failed
+(\S+) failed, user does not have proper access: (\S+)
+Service (\S+) failed to start and is deactivated\.
+(\S+) shutdown succeeded
+Starting (\S+):  (\S*)
+Stopping (\S+)(?: (\S+))?:(?:\s+(\S+))?
+session opened for user (\S+) by (\S*)\(uid=(\S+)\)
+session closed for user (\S+)
+Device: (\S+), opened
+Opened configuration file (\S+)
+\[<(\S+)>\] (\S+)\/(\S+)(?: \[(\S+)\])?
+creating device node '(\S+)'
+removing device node '(\S+)'
+ov (\S+) (\S+) combo last message repeated (\S+) times
+EXT3-fs: write access will be enabled during recovery.
+EXT3-fs: INFO: recovery required on readonly filesystem.
+EXT3-fs: recovery complete.
+(\S+) (\S+) (\S+) Privoxy\((\S+)\) Info: loading configuration file '(\S+)':
+isapnp: No Plug & Play device found
+Device: (\S+), is SMART capable. Adding to "(\S+)" list.
+Device: (\S+), found in smartd database.
+PCI: Found IRQ (\S+) for device (\S+)
+Disabled Privacy Extensions on device (\S+)\((\S+)\)
+device-mapper: (\S+) \((\S+)\) initialised: (\S+)
+Monitoring (\S+) ATA and (\S+) SCSI devices
+mice: PS/2 mouse device common for all mice
