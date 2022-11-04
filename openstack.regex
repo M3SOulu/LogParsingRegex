@@ -1,58 +1,58 @@
-([^\s]+) "GET ([^\s]+) ([^\s]+)" status: ([^\s]+) len: ([^\s]+) time: ([^\s]+)
-([^\s]+) "POST ([^\s]+) ([^\s]+) status: ([^\s]+) len: ([^\s]+) time: ([^\s]+)
-([^\s]+) "DELETE ([^\s]+) ([^\s]+) status: ([^\s]+) len: ([^\s]+) time: ([^\s]+)
-Deleting instance files ([^\s]+)
-Took ([^\s]+) seconds to destroy the instance on the hypervisor.
-image ([^\s]+) at ([^\s]+) checking
-image ([^\s]+) at ([^\s]+) in use: on this node ([^\s]+) local, ([^\s]+) on other nodes sharing this instance storage
-Active base files: ([^\s]+)
-Took ([^\s]+) seconds to deallocate network for instance.
-Unknown base file: ([^\s]+)
-Removable base files: ([^\s]+)
-Removing base or swap file: ([^\s]+)
-Attempting claim: memory ([^\s]+) ([^\s]+), disk ([^\s]+) ([^\s]+), vcpus ([^\s]+) CPU
-Base or swap file too young to remove: ([^\s]+)
-Total disk: ([^\s]+) GB, used: ([^\s]+) GB
-memory limit: ([^\s]+) MB, free: ([^\s]+) MB
+(\S+) "GET (\S+) (\S+)" status: (\S+) len: (\S+) time: (\S+)
+(\S+) "POST (\S+) (\S+) status: (\S+) len: (\S+) time: (\S+)
+(\S+) "DELETE (\S+) (\S+) status: (\S+) len: (\S+) time: (\S+)
+Deleting instance files (\S+)
+Took (\S+) seconds to destroy the instance on the hypervisor.
+image (\S+) at (\S+) checking
+image (\S+) at (\S+) in use: on this node (\S+) local, (\S+) on other nodes sharing this instance storage
+Active base files: (\S+)
+Took (\S+) seconds to deallocate network for instance.
+Unknown base file: (\S+)
+Removable base files: (\S+)
+Removing base or swap file: (\S+)
+Attempting claim: memory (\S+) (\S+), disk (\S+) (\S+), vcpus (\S+) CPU
+Base or swap file too young to remove: (\S+)
+Total disk: (\S+) GB, used: (\S+) GB
+memory limit: (\S+) MB, free: (\S+) MB
 vcpu limit not specified, defaulting to unlimited
-Total memory: ([^\s]+) MB, used: ([^\s]+) MB
-Compute_service record updated for ([^\s]+)
-Final resource view: name=([^\s]+) phys_ram=([^\s]+) used_ram=([^\s]+) phys_disk=([^\s]+) used_disk=([^\s]+) total_vcpus=([^\s]+) used_vcpus=([^\s]+) pci_stats=([^\s]+)
-\[instance: ([^\s]+)\] During sync_power_state the instance has a pending task \(spawning\). Skip.
-\[instance: ([^\s]+)\] During sync_power_state the instance has a pending task \(networking\). Skip.
-\[instance: ([^\s]+)\] During sync_power_state the instance has a pending task \(deleting\). Skip.
-\[instance: ([^\s]+)\] Creating image
-\[instance: ([^\s]+)\] Instance spawned successfully.
-\[instance: ([^\s]+)\] Claim successful
-\[instance: ([^\s]+)\] VM Started \(Lifecycle Event\)
-\[instance: ([^\s]+)\] VM Resumed \(Lifecycle Event\)
-\[instance: ([^\s]+)\] VM Paused \(Lifecycle Event\)
-\[instance: ([^\s]+)\] VM Stopped \(Lifecycle Event\)
-\[instance: ([^\s]+)\] Took ([^\s]+) seconds to deallocate network for instance.
-\[instance: ([^\s]+)\] Took ([^\s]+) seconds to destroy the instance on the hypervisor.
-\[instance: ([^\s]+)\] Took ([^\s]+) seconds to spawn the instance on the hypervisor.
-\[instance: ([^\s]+)\] Took ([^\s]+) seconds to build instance.
-\[instance: ([^\s]+)\] Terminating instance
-\[instance: ([^\s]+)\] Instance destroyed successfully.
-\[instance: ([^\s]+)\] disk limit not specified, defaulting to unlimited
-\[instance: ([^\s]+)\] Total disk: ([^\s]+) ([^\s]+), used: ([^\s]+) ([^\s]+)
-\[instance: ([^\s]+)\] memory limit: ([^\s]+) ([^\s]+), free: ([^\s]+) ([^\s]+)
-\[instance: ([^\s]+)\] Total memory: ([^\s]+) ([^\s]+), used: ([^\s]+) ([^\s]+)
-\[instance: ([^\s]+)\] Deletion of ([^\s]+) complete
-\[instance: ([^\s]+)\] Deleting instance files ([^\s]+)
-\[instance: ([^\s]+)\] Attempting claim: memory ([^\s]+) ([^\s]+), disk ([^\s]+) ([^\s]+), vcpus ([^\s]+) CPU
-\[instance: ([^\s]+)\] vcpu limit not specified, defaulting to unlimited
-\[instance: ([^\s]+)\] Total vcpu: ([^\s]+) VCPU, used: ([^\s]+) VCPU
+Total memory: (\S+) MB, used: (\S+) MB
+Compute_service record updated for (\S+)
+Final resource view: name=(\S+) phys_ram=(\S+) used_ram=(\S+) phys_disk=(\S+) used_disk=(\S+) total_vcpus=(\S+) used_vcpus=(\S+) pci_stats=(\S+)
+\[instance: (\S+)\] During sync_power_state the instance has a pending task \(spawning\). Skip.
+\[instance: (\S+)\] During sync_power_state the instance has a pending task \(networking\). Skip.
+\[instance: (\S+)\] During sync_power_state the instance has a pending task \(deleting\). Skip.
+\[instance: (\S+)\] Creating image
+\[instance: (\S+)\] Instance spawned successfully.
+\[instance: (\S+)\] Claim successful
+\[instance: (\S+)\] VM Started \(Lifecycle Event\)
+\[instance: (\S+)\] VM Resumed \(Lifecycle Event\)
+\[instance: (\S+)\] VM Paused \(Lifecycle Event\)
+\[instance: (\S+)\] VM Stopped \(Lifecycle Event\)
+\[instance: (\S+)\] Took (\S+) seconds to deallocate network for instance.
+\[instance: (\S+)\] Took (\S+) seconds to destroy the instance on the hypervisor.
+\[instance: (\S+)\] Took (\S+) seconds to spawn the instance on the hypervisor.
+\[instance: (\S+)\] Took (\S+) seconds to build instance.
+\[instance: (\S+)\] Terminating instance
+\[instance: (\S+)\] Instance destroyed successfully.
+\[instance: (\S+)\] disk limit not specified, defaulting to unlimited
+\[instance: (\S+)\] Total disk: (\S+) (\S+), used: (\S+) (\S+)
+\[instance: (\S+)\] memory limit: (\S+) (\S+), free: (\S+) (\S+)
+\[instance: (\S+)\] Total memory: (\S+) (\S+), used: (\S+) (\S+)
+\[instance: (\S+)\] Deletion of (\S+) complete
+\[instance: (\S+)\] Deleting instance files (\S+)
+\[instance: (\S+)\] Attempting claim: memory (\S+) (\S+), disk (\S+) (\S+), vcpus (\S+) CPU
+\[instance: (\S+)\] vcpu limit not specified, defaulting to unlimited
+\[instance: (\S+)\] Total vcpu: (\S+) VCPU, used: (\S+) VCPU
 Error during ComputeManager._run_image_cache_manager_pass
-Auditing locally available compute resources for node ([^\s]+)
-Total usable vcpus: ([^\s]+) total allocated vcpus: ([^\s]+)
-While synchronizing instance power states, found ([^\s]+) instances in the database and ([^\s]+) instances on the hypervisor.
-Successfully synced instances from host ([^\s]+)
+Auditing locally available compute resources for node (\S+)
+Total usable vcpus: (\S+) total allocated vcpus: (\S+)
+While synchronizing instance power states, found (\S+) instances in the database and (\S+) instances on the hypervisor.
+Successfully synced instances from host (\S+)
 HTTP exception thrown: No instances found for any event
-Creating event network-vif-plugged:([^\s]+) for instance ([^\s]+)
-The instance sync for host '([^\s]+)' did not match. Re-created its InstanceList.
-Running instance usage audit for host ([^\s]+) from ([^\s]+) ([^\s]+) to ([^\s]+) ([^\s]+)\. ([^\s]+) instances.
+Creating event network-vif-plugged:(\S+) for instance (\S+)
+The instance sync for host '(\S+)' did not match. Re-created its InstanceList.
+Running instance usage audit for host (\S+) from (\S+) (\S+) to (\S+) (\S+)\. (\S+) instances.
 Unable to validate token: Failed to fetch token data from identity server
-couldn't obtain the vcpu count from domain id: ([^\s]+) exception: Requested operation is not valid: cpu affinity is not supported
-Bad response code while validating token: ([^\s]+)
+couldn't obtain the vcpu count from domain id: (\S+) exception: Requested operation is not valid: cpu affinity is not supported
+Bad response code while validating token: (\S+)
 Identity response: (<!DOCTYPE) (HTML) (PUBLIC) ("-//IETF//DTD) (HTML) (2.0//EN">)
