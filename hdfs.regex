@@ -1,30 +1,30 @@
-Adding an already existing block ([^\s]+)
-Verification succeeded for ([^\s]+)
-([^\s]+) Served block ([^\s]+) to ([^\s]+)
-([^\s]+):Got exception while serving ([^\s]+) to ([^\s]+)
-Receiving block ([^\s]+) src: ([^\s]+) dest: ([^\s]+)
-Received block ([^\s]+) src: ([^\s]+) dest: ([^\s]+) of size ([^\s]+)
-writeBlock ([^\s]+) received exception (.+)
-PacketResponder ([^\s]+) for block ([^\s]+) Interrupted\.
-Received block ([^\s]+) of size ([^\s]+) from ([^\s]+)
-PacketResponder ([^\s]+) ([^\s]+) Exception (.+)
-PacketResponder ([^\s]+) for block ([^\s]+) terminating
-([^\s]+):Exception writing block ([^\s]+) to mirror ([^\s]+)
-Receiving empty packet for block ([^\s]+)
-Exception in receiveBlock for block ([^\s]+) (.+)
-Changing block file offset of block ([^\s]+) from ([^\s]+) to ([^\s]+) meta file offset to ([^\s]+)
-([^\s]+):Transmitted block ([^\s]+) to ([^\s]+)
-([^\s]+):Failed to transfer ([^\s]+) to ([^\s]+) got (.+)
-([^\s]+) Starting thread to transfer block ([^\s]+) to ([^\s]+)(?:, ([^\s]+))?
-Reopen Block ([^\s]+)
-Unexpected error trying to delete block ([^\s]+)\. BlockInfo not found in volumeMap\.
-Deleting block ([^\s]+) file ([^\s]+)
-BLOCK\* NameSystem.allocateBlock: ([^\s]+) ([^\s]+)
-BLOCK\* NameSystem.delete: ([^\s]+) is added to invalidSet of ([^\s]+)
-BLOCK\* Removing block ([^\s]+) from neededReplications as it does not belong to any file\.
-BLOCK\* ask ([^\s]+) to replicate ([^\s]+) to datanode\(s\) (.+)
-BLOCK\* NameSystem.addStoredBlock: blockMap updated: ([^\s]+) is added to ([^\s]+) size ([^\s]+)
-BLOCK\* NameSystem.addStoredBlock: Redundant addStoredBlock request received for ([^\s]+) on ([^\s]+) size ([^\s]+)
-BLOCK\* NameSystem.addStoredBlock: addStoredBlock request received for ([^\s]+) on ([^\s]+) size ([^\s]+) But it does not belong to any file.
-PendingReplicationMonitor timed out block ([^\s]+)
-BLOCK\* ask ([^\s]+) to delete ([^\s]+)
+Adding an already existing block blk_(\S+)
+Verification succeeded for blk_(\S+)
+(\S+) Served block blk_(\S+) to (\S+)
+(\S+):Got exception while serving blk_(\S+) to (\S+)
+Receiving block blk_(\S+) src: (\S+) dest: (\S+)
+Received block blk_(\S+) src: (\S+) dest: (\S+) of size (\S+)
+Received block blk_(\S+) of size (\S+) from (\S+)
+writeBlock blk_(\S+) received exception (\S+)(?: (\S+))*
+PacketResponder (\S+) for block blk_(\S+) Interrupted\.
+PacketResponder blk_(\S+) (\S+) Exception (\S+)(?: \S+)*
+PacketResponder (\S+) for block blk_(\S+) terminating
+(\S+):Exception writing block blk_(\S+) to mirror (\S+)
+Receiving empty packet for block blk_(\S+)
+Exception in receiveBlock for block blk_(\S+) (\S+)(?: \S+)*
+Changing block file offset of block blk_(\S+) from (\S+) to (\S+) meta file offset to (\S+)
+(\S+):Transmitted block blk_(\S+) to (\S+)
+(\S+):Failed to transfer blk_(\S+) to (\S+) got java\.io\.IOException: Connection reset by peer
+(\S+) Starting thread to transfer block blk_(\S+) to (\S+)(?:, (\S+))?
+Reopen Block blk_(\S+)
+Unexpected error trying to delete block blk_(\S+)\. BlockInfo not found in volumeMap\.
+Deleting block blk_(\S+) file (\S+)
+BLOCK\* NameSystem.allocateBlock: (\S+) blk_(\S+)
+BLOCK\* NameSystem.delete: blk_(\S+) is added to invalidSet of (\S+)
+BLOCK\* Removing block blk_(\S+) from neededReplications as it does not belong to any file\.
+BLOCK\* ask (\S+) to replicate blk_(\S+) to datanode\(s\)(?: (\S+))*
+BLOCK\* ask (\S+) to delete blk_(\S+)
+BLOCK\* NameSystem.addStoredBlock: blockMap updated: (\S+) is added to blk_(\S+) size (\S+)
+BLOCK\* NameSystem.addStoredBlock: Redundant addStoredBlock request received for blk_(\S+) on (\S+) size (\S+)
+BLOCK\* NameSystem.addStoredBlock: addStoredBlock request received for blk_(\S+) on (\S+) size (\S+) But it does not belong to any file.
+PendingReplicationMonitor timed out block blk_(\S+)
