@@ -95,3 +95,44 @@ Disabled Privacy Extensions on device (\S+)\((\S+)\)
 device-mapper: (\S+) \((\S+)\) initialised: (\S+)
 Monitoring (\S+) ATA and (\S+) SCSI devices
 mice: PS/2 mouse device common for all mice
+Squid Parent: child process (\S+) started
+Squid Parent: child process (\S+) exited with status (\S+)
+httpd: page allocation failure. order:(\S+), mode:(\S+)
+Total HugeTLB memory allocated, (\S+)
+wall: user test broadcasted (\S+) lines \((\S+) chars\)
+listening on (\S+) interface (\S+), (\S+)
+rsyncd version (\S+) starting, listening on port (\S+)
+ACPI: ACPI tables contain no PCI IRQ routing entries
+ACPI: Subsystem revision (\S+)
+ACPI: Interpreter disabled.
+Bluetooth: (\S+) ver (\S+)
+Bluetooth: (\S+) TTY layer initialized
+Bluetooth: (\S+) socket layer initialized
+PCI: Invalid ACPI-PCI IRQ routing table
+PCI: PCI BIOS revision (\S+) entry at (\S+), last bus=('S+)
+PCI: Probing PCI hardware
+PCI: Using configuration type (\S+)
+PCI: Probing PCI hardware \(bus (\S+)\)
+PCI: Using IRQ router PIIX/ICH \[(\S+)/(\S+)\] at (\S+)
+pci_hotplug: PCI Hot Plug PCI Core version: (\S+)
+ttloop:  peer died: Invalid or incomplete multibyte or wide character
+Warning!  Could not relabel  with (\S+), not relabeling.
+EXT3-fs: mounted filesystem with ordered data mode.
+EXT3-fs: hda2: (\S+) orphan inodes deleted
+EXT3 FS on (\S+), internal journal
+EXT3-fs: hda2: orphan cleanup on readonly fs
+VFS: Mounted root \((\S+) filesystem\)\.
+Adding (\S+) swap on (\S+)\.  Priority:(\S+) extents:(\S+)
+ANONYMOUS FTP LOGIN FROM (\S+),  (anonymous)
+getpeername \(ftpd\): Transport endpoint is not connected
+ANONYMOUS FTP LOGIN FROM (\S+), (\S+)? \((\S+)\)
+VM: killing process (\S+)
+Version (\S+) Starting
+(\S+) starting.  Commit interval (\S+) seconds
+starting BIND (\S+) -u (\S+) -t (\S+)
+Starting background (\S+):
+TCP: Hash tables configured \(established (\S+) bind (\S+)\)
+(\S+) at I/O (\S+) \(irq = (\S+)\) is a (\S+)
+(\S+) LOGIN ON (\S+)
+(\S+): invalid character (\S+) in login name
+hdc: Disabling (U)DMA for (\S+) (\S+) (\S+) (blacklisted)
