@@ -39,7 +39,7 @@ presently, hw_update_color_temp_for_rg_led interface not achieved.
 DialpadFragment mBroadcastReceiver action:(\S+)
 disableEffects=(\S+) canInterrupt=(\S+) once update: (\S+)
 onNotificationPosted: StatusBarNotification\(pkg=(\S+) user=UserHandle\{(\S+)\} id=(\S+) tag=(\S+) key=(\S+)\|(\S+)\|(\S+)\|(\S+)\|(\S+): Notification\(pri=(\S+) contentView=(\S+) vibrate=(\S+) sound=(\S+) defaults=(\S+) flags=(\S+) color=(\S+) vis=(\S+)\)\) important=(\S+), post=(\S+), when=(\S+), vis=(\S+), userid=(\S+)
-updateNotification\(StatusBarNotification\(pkg=(\S+) user=UserHandle\{(\S+)} id=(\S+) tag=(\S+) key=(\S+)\|(\S+)\|(\S+)\|(\S+)\|(\S+): Notification\(pri=(\S+) contentView=(\S+) vibrate=(\S+) sound=(\S+) defaults=(\S+) flags=(\S+) color=(\S+) vis=(\S+)\)\)\)
+updateNotification\(StatusBarNotification\(pkg=(\S+) user=UserHandle\{(\S+)\} id=(\S+) tag=(\S+) key=(\S+)\|(\S+)\|(\S+)\|(\S+)\|(\S+): Notification\(pri=(\S+) contentView=(\S+) vibrate=(\S+) sound=(\S+) defaults=(\S+) flags=(\S+) color=(\S+) vis=(\S+)\)\)\)
 updateTint: tint=(\S+)
 No peeking: unimportant notification: (\S+)\|(\S+)\|(\S+)\|(\S+)\|(\S+)
 applyInPlace=(\S+) shouldPeek=(\S+) alertAgain=(\S+)
