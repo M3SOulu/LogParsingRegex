@@ -1,4 +1,4 @@
-reverse mapping checking getaddrinfo for (.*) failed - POSSIBLE BREAK-IN ATTEMPT!
+reverse mapping checking getaddrinfo for (\S*) \[(\S*)\] failed - POSSIBLE BREAK-IN ATTEMPT!
 Address (\S*) maps to (\S*), but this does not map back to the address - POSSIBLE BREAK-IN ATTEMPT!
 input_userauth_request: invalid user\s+(\S*) \[preauth\]
 syslogin_perform_logout: logout\(\) returned an error
@@ -12,14 +12,14 @@ Failed password for\s+(\S*) from (\S*) port (\S*) ssh2
 Failed none for invalid user\s+(\S*) from (\S+) port (\S+) ssh2
 Connection closed by (\S*) \[preauth\]
 Disconnecting: Too many authentication failures for (\S*) \[preauth\]
-Invalid user (.*) from (\S*)
+Invalid user\s+(\S*) from (\S*)
 Received disconnect from (\S+): (\S+): Bye Bye \[preauth\]
 message repeated (\S+) times: \[ Failed password for (\S+) from (\S+) port (\S+) ssh2\]
 PAM (\S+) more authentication failures; logname=(\S*) uid=(\S*) euid=(\S*) tty=(\S*) ruser=(\S*) rhost=(\S*)
 PAM (\S+) more authentication failures; logname=(\S*) uid=(\S*) euid=(\S*) tty=(\S*) ruser=(\S*) rhost=(\S+)  user=(\S*)
 PAM (\S+) more authentication failure; logname=(\S*) uid=(\S*) euid=(\S*) tty=(\S*) ruser=(\S*) rhost=(\S*)
 PAM (\S+) more authentication failure; logname=(\S*) uid=(\S*) euid=(\S*) tty=(\S*) ruser=(\S*) rhost=(\S*)  user=(\S*)
-PAM service\(sshd\) ignoring max retries; (.*)
+PAM service\(sshd\) ignoring max retries; (\S+) (?:>|<) (\S+)
 Did not receive identification string from (\S+)
 Received disconnect from (\S+): (\S+): Closed due to user request. \[preauth\]
 Received disconnect from (\S+): (\S+): disconnect \[preauth\]
@@ -46,7 +46,7 @@ Accepted password for\s+(\S*) from (\S+) port (\S+) ssh2
 fatal: Write failed: Connection reset by peer \[preauth\]
 fatal: Read from socket failed: Connection reset by peer \[preauth\]
 fatal: no hostkey alg \[preauth\]
-Bad protocol version identification '(.*)' from (\S+) port (\S+)
+Bad protocol version identification '(\S*)(?: (\S+))?(?: (\S+))?' from (\S+) port (\S+)
 Bad packet length (\S+). \[preauth\]
 Disconnecting: Packet corrupt \[preauth\]
 Corrupted MAC on input. \[preauth\]
