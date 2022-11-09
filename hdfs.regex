@@ -5,16 +5,16 @@ Verification succeeded for blk_(\S+)
 Receiving block blk_(\S+) src: (\S+) dest: (\S+)
 Received block blk_(\S+) src: (\S+) dest: (\S+) of size (\S+)
 Received block blk_(\S+) of size (\S+) from (\S+)
-writeBlock blk_(\S+) received exception (\S+)(?: (\S+))*
+writeBlock blk_(\S+) received exception (.+)
 PacketResponder (\S+) for block blk_(\S+) Interrupted\.
-PacketResponder blk_(\S+) (\S+) Exception (\S+)(?: \S+)*
+PacketResponder blk_(\S+) (\S+) Exception (.+)
 PacketResponder (\S+) for block blk_(\S+) terminating
 (\S+):Exception writing block blk_(\S+) to mirror (\S+)
 Receiving empty packet for block blk_(\S+)
-Exception in receiveBlock for block blk_(\S+) (\S+)(?: \S+)*
+Exception in receiveBlock for block blk_(\S+) (.+)
 Changing block file offset of block blk_(\S+) from (\S+) to (\S+) meta file offset to (\S+)
 (\S+):Transmitted block blk_(\S+) to (\S+)
-(\S+):Failed to transfer blk_(\S+) to (\S+) got java\.io\.IOException: Connection reset by peer
+(\S+):Failed to transfer blk_(\S+) to (\S+) got (.*)
 (\S+) Starting thread to transfer block blk_(\S+) to (\S+)(?:, (\S+))?
 Reopen Block blk_(\S+)
 Unexpected error trying to delete block blk_(\S+)\. BlockInfo not found in volumeMap\.
@@ -22,7 +22,7 @@ Deleting block blk_(\S+) file (\S+)
 BLOCK\* NameSystem.allocateBlock: (\S+) blk_(\S+)
 BLOCK\* NameSystem.delete: blk_(\S+) is added to invalidSet of (\S+)
 BLOCK\* Removing block blk_(\S+) from neededReplications as it does not belong to any file\.
-BLOCK\* ask (\S+) to replicate blk_(\S+) to datanode\(s\)(?: (\S+))*
+BLOCK\* ask (\S+) to replicate blk_(\S+) to datanode\(s\) (\S+)(?: (\S+))?
 BLOCK\* ask (\S+) to delete blk_(\S+)
 BLOCK\* NameSystem.addStoredBlock: blockMap updated: (\S+) is added to blk_(\S+) size (\S+)
 BLOCK\* NameSystem.addStoredBlock: Redundant addStoredBlock request received for blk_(\S+) on (\S+) size (\S+)
