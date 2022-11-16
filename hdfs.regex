@@ -5,16 +5,40 @@ Verification succeeded for blk_(\S+)
 Receiving block blk_(\S+) src: (\S+) dest: (\S+)
 Received block blk_(\S+) src: (\S+) dest: (\S+) of size (\S+)
 Received block blk_(\S+) of size (\S+) from (\S+)
-writeBlock blk_(\S+) received exception (.+)
+writeBlock blk_(\S+) received exception java.net.NoRouteToHostException: No route to host
+writeBlock blk_(\S+) received exception java.nio.channels.ClosedByInterruptException
+writeBlock blk_(\S+) received exception java.io.EOFException
+writeBlock blk_(\S+) received exception java.net.SocketTimeoutException
+writeBlock blk_(\S+) received exception java.io.IOException: Could not read from stream
+writeBlock blk_(\S+) received exception java.io.IOException: Interrupted receiveBlock
+writeBlock blk_(\S+) received exception java.io.IOException: Broken pipe
+writeBlock blk_(\S+) received exception java.io.IOException: Connection reset by peer
+writeBlock blk_(\S+) received exception java.io.IOException: Block blk_(\S+) is valid, and cannot be written to.
+writeBlock blk_(\S+) received exception java.net.SocketTimeoutException: (\S+) millis timeout while waiting for channel to be ready for read. ch : java.nio.channels.SocketChannel\[connected local=(\S+) remote=(\S+)\]
+writeBlock blk_(\S+) received exception java.net.SocketTimeoutException: (\S+) millis timeout while waiting for channel to be ready for write. ch : java.nio.channels.SocketChannel\[connected local=(\S+) remote=(\S+)\]
+writeBlock blk_(\S+) received exception java.io.InterruptedIOException: Interruped while waiting for IO on channel java.nio.channels.SocketChannel\[connected local=(\S+) remote=(\S+)\]. (\S+) (\S+) timeout left.
 PacketResponder (\S+) for block blk_(\S+) Interrupted\.
-PacketResponder blk_(\S+) (\S+) Exception (.+)
+PacketResponder blk_(\S+) (\S+) Exception java.nio.channels.ClosedByInterruptException
+PacketResponder blk_(\S+) (\S+) Exception java.io.EOFException
+PacketResponder blk_(\S+) (\S+) Exception java.io.IOException: Broken pipe
+PacketResponder blk_(\S+) (\S+) Exception java.io.IOException: Connection reset by peer
+PacketResponder blk_(\S+) (\S+) Exception java.io.IOException: The stream is closed
+PacketResponder blk_(\S+) (\S+) Exception java.io.InterruptedIOException: Interruped while waiting for IO on channel java.nio.channels.SocketChannel\[closed\]. (\S+) millis timeout left.
+PacketResponder blk_(\S+) (\S+) Exception java.net.SocketTimeoutException: (\S+) millis timeout while waiting for channel to be ready for read. ch : java.nio.channels.SocketChannel\[connected local=(\S+) remote=(\S+)\]
+PacketResponder blk_(\S+) (\S+) Exception java.io.InterruptedIOException: Interruped while waiting for IO on channel java.nio.channels.SocketChannel\[connected local=(\S+) remote=(\S+)\]. (\S+) millis timeout left.
 PacketResponder (\S+) for block blk_(\S+) terminating
 (\S+):Exception writing block blk_(\S+) to mirror (\S+)
 Receiving empty packet for block blk_(\S+)
-Exception in receiveBlock for block blk_(\S+) (.+)
+Exception in receiveBlock for block blk_(\S+)
+Exception in receiveBlock for block blk_(\S+) java.io.EOFException
+Exception in receiveBlock for block blk_(\S+) java.nio.channels.ClosedByInterruptException
+Exception in receiveBlock for block blk_(\S+) java.io.IOException: Broken pipe
+Exception in receiveBlock for block blk_(\S+) java.io.IOException: Connection reset by peer
+Exception in receiveBlock for block blk_(\S+) java.io.InterruptedIOException: Interruped while waiting for IO on channel java.nio.channels.SocketChannel\[connected local=(\S+) remote=(\S+)\]. (\S+) millis timeout left.
+Exception in receiveBlock for block blk_(\S+) java.net.SocketTimeoutException: (\S+) millis timeout while waiting for channel to be ready for write. ch : java.nio.channels.SocketChannel\[connected local=(\S+) remote=(\S+)\]
 Changing block file offset of block blk_(\S+) from (\S+) to (\S+) meta file offset to (\S+)
 (\S+):Transmitted block blk_(\S+) to (\S+)
-(\S+):Failed to transfer blk_(\S+) to (\S+) got (.*)
+(\S+):Failed to transfer blk_(\S+) to (\S+) got java.io.IOException: Connection reset by peer
 (\S+) Starting thread to transfer block blk_(\S+) to (\S+)(?:, (\S+))?
 Reopen Block blk_(\S+)
 Unexpected error trying to delete block blk_(\S+)\. BlockInfo not found in volumeMap\.
