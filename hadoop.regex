@@ -23,12 +23,11 @@ Using callQueue class java.util.concurrent.LinkedBlockingQueue
 Extract (\S+) to (\S+)
 Added global filter 'safety' (\S+)
 MRAppMaster launching normal, non-uberized, multi-container job (\S+)
-Kind: YARN_AM_RM_TOKEN, Service: , Ident: \(appAttemptId { application_id { id: (\S+) cluster_timestamp: (\S+) } attemptId: (\S+) } keyId: (\S+)\)
+Kind: YARN_AM_RM_TOKEN, Service: , Ident: \(appAttemptId \{ application_id \{ id: (\S+) cluster_timestamp: (\S+) \} attemptId: (\S+) \} keyId: (\S+)\)
 Web app /mapreduce started at (\S+)
 IPC Server listener on (\S+) starting
 nodeBlacklistingEnabled:(\S+)
 (\S+) TaskAttempt Transitioned from (\S+) to (\S+)
-Processing the event EventType: JOB_SETUP
 Added filter AM_PROXY_FILTER \(class=(\S+)\) to context mapreduce
 adding path spec: /mapreduce/*
 Using mapred newApiCommitter.
@@ -86,7 +85,7 @@ getResources\(\) for (\S+): ask=(\S+) release= (\S+) newContainers=(\S+) finishe
 We launched (\S+) speculations.  Sleeping (\S+) milliseconds.
 DefaultSpeculator.addSpeculativeAttempt -- we are speculating (\S+)
 Ramping up (\S+)
-completedMapPercent (\S+) totalResourceLimit:<memory:(\S+), vCores:(\S+)> finalMapResourceLimit:<memory:(\S+), vCores:(\S+)> finalReduceResourceLimit:<memory:(\S+), vCores:(\S+)> netScheduledMapResource:<memory:(\S+), vCores:(\S+)> netScheduledReduceResource:<memory:(\S+), vCores:(\S+)>
+completedMapPercent (\S+) totalResourceLimit:<memory:(\S+), vCores:(\S+)> finalMapResourceLimit:<memory:(\S+), vCores:(\S+)> finalReduceResourceLimit:<memory:(\S+), vCores:(\S+)> netScheduledMapResource:<memory:(\S+), vCores:(\S+)> netSchhadoop.regexeduledReduceResource:<memory:(\S+), vCores:(\S+)>
 Recalculating schedule, headroom=<memory:(\S+), vCores:(\S+)>
 Reduce slow start threshold not met. completedMapsForReduceSlowstart (\S+)
 Adding (\S+) tokens and (\S+) secret keys for (\S+) use for launching container
@@ -94,16 +93,15 @@ adding path spec: (\S+)
 (\S+) Transitioned from (\S+) to (\S+)
 Kind: mapreduce.job, Service: (\S+), Ident: \((\S+)\)
 Sleeping for (\S+) before retrying again. Got null now.
-MapTask metrics system started
 Retrying connect to server: (\S+). Already tried (\S+) time\(s\); maxRetries=(\S+)
-Retrying connect to server: (\S+). Already tried (\S+) time\(s\); retry policy is (.+)
-Diagnostics report from (\S+) Container released on a \*lost\* node
+Retrying connect to server: (\S+). Already tried (\S+) time\(s\); retry policy is RetryUpToMaximumCountWithFixedSleep\(maxRetries=(\S+), sleepTime=(\S+) (\S+)\)
+Diagnostics report from (\S+) Container released on a \*lost\* nodehadoop.regex
 Killing (\S+) because it is running on unusable (\S+)
 Stopped JobHistoryEventHandler\. super\.stop\(\)
 Moved tmp to done: (\S+)
-Using ResourceCalculatorProcessTree : (\S+)
+Using (\S+)\s*: (\S+)@(\S+)
 ProcfsBasedProcessTree currently is supported only on Linux.
-(.+) is deprecated. Instead, use (.+)
+(\S+) is deprecated. Instead, use (\S+)
 (\S+) for child: (\S+)
 Copied to done location: (\S+)
 soft limit at (\S+)
@@ -116,8 +114,152 @@ Abandoning (\S+)
 bufstart = (\S+) bufvoid = (\S+)
 Calling stop for all the services
 Stopping JobHistoryEventHandler. Size of the outstanding queue size is (\S+)
-
 RMCommunicator notified that shouldUnregistered is: (\S+)
 Notify (\S+) isAMLastRetry: (\S+)
 JobHistoryEventHandler notified that forceJobCompletion is (\S+)
 Exception in (\S+)
+Failed to renew lease for \[DFSClient_NONMAPREDUCE_(\S+)\] for (\S+) seconds.  Will retry shortly \.\.\.
+Task 'attempt_(\S+)' done\.
+attempt_(\S+): Shuffling to disk since (\S+) is greater than maxSingleShuffleLimit \((\S+)\)
+kvstart = ((\S+)\((\S+)\)|(\S+))(?:; kvend = (\S+)\((\S+)\))?; length = ((\S+)/(\S+)|(\S+))
+fetcher#(\S+) about to shuffle output of map attempt_(\S+) decomp: (\S+) len: (\S+) to (\S+)
+Shuffle failed : local error on this node: (\S+)
+for url=(\S+) sent hash and received reply
+(\S+) freed by fetcher#(\S+) in (\S+)
+Read (\S+) bytes from map-output for attempt_(\S+)
+Read from history task task_(\S+)
+Could not delete (\S+)
+Issuing kill to other attempt attempt_(\S+)
+TaskAttempt killed because it ran on unusable node (\S+)\. AttemptId:attempt_(\S+)
+Last retry, killing attempt_(\S+)
+Task:attempt_(\S+) is done. And is in the process of committing
+Stopping IPC Server listener on (\S+)
+Stopping IPC Server Responder
+Stopping server on (\S+)
+In stop, writing event (\S+)
+Stopping (\S+) metrics system\.\.\.
+(\S+) metrics system stopped\.
+Graceful stop failed
+When stopping the service JobHistoryEventHandler : org.apache.avro.AvroTypeException: Attempt to process a enum when a union was expected.
+When stopping the service JobHistoryEventHandler : org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.nio.channels.ClosedChannelException
+When stopping the service JobHistoryEventHandler : org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.net.NoRouteToHostException: No Route to Host from  (\S+) to (\S+) failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see: http://wiki.apache.org/hadoop/NoRouteToHost
+Service (\S+) failed in state (\S+); cause: org.apache.avro.AvroTypeException: Attempt to process a enum when a union was expected.
+Service (\S+) failed in state (\S+); cause: org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.nio.channels.ClosedChannelException
+Service (\S+) failed in state (\S+); cause: org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.net.NoRouteToHostException: No Route to Host from  (\S+) to (\S+) failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see:\s+http://wiki.apache.org/hadoop/NoRouteToHost
+Service (\S+) failed in state (\S+); cause: org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.net.NoRouteToHostException: No Route to Host from  (\S+) to (\S+) failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see: http://wiki.apache.org/hadoop/NoRouteToHost
+attempt_(\S+) given a go for committing the task output.
+Assigning (\S+) with (\S+) to fetcher#(\S+)
+assigned (\S+) of (\S+) to (\S+) to fetcher#(\S+)
+Final Stats: PendingReds:(\S+) ScheduledMaps:(\S+) ScheduledReds:(\S+) AssignedMaps:(\S+) AssignedReds:(\S+) CompletedMaps:(\S+) CompletedReds:(\S+) ContAlloc:(\S+) ContRel:(\S+) HostLocal:(\S+) RackLocal:(\S+)
+Cannot assign container Container: \[ContainerId: container_(\S+), NodeId: (\S+), NodeHttpAddress: (\S+), Resource: <memory:(\S+), vCores:(\S+)>, Priority: (\S+), Token: Token \{ kind: (\S+), service: (\S+) \}, \] for a map as either  container memory less than required <memory:(\S+), vCores:(\S+)> or no pending map tasks - maps.isEmpty=(\S+)
+Releasing unassigned and invalid container Container: \[ContainerId: container_(\S+), NodeId: (\S+), NodeHttpAddress: (\S+), Resource: <memory:(\S+), vCores:(\S+)>, Priority: (\S+), Token: Token \{ kind: (\S+), service: (\S+) \}, \]. RM may have assignment issues
+Assigning container Container: \[ContainerId: container_(\S+), NodeId: (\S+), NodeHttpAddress: (\S+), Resource: <memory:(\S+), vCores:(\S+)>, Priority: (\S+), Token: Token \{ kind: (\S+), service: (\S+) \}, \] to fast fail map
+Recovering task task_(\S+) from prior app attempt, status was (\S+)
+Diagnostics report from attempt_(\S+):
+Diagnostics report from attempt_(\S+): FSError: java.io.IOException: There is not enough space on the disk
+Diagnostics report from attempt_(\S+): Error: org.apache.hadoop.mapreduce.task.reduce.Shuffle\$ShuffleError: error in shuffle in fetcher#(\S+)
+Diagnostics report from attempt_(\S+): Error: java.io.IOException: There is not enough space on the disk
+Diagnostics report from attempt_(\S+): Error: java.io.IOException: Spill failed
+Diagnostics report from attempt_(\S+): Container released on a \*lost\* node
+Diagnostics report from attempt_(\S+): AttemptID:attempt_(\S+) Timed out after (\S+) secs
+Diagnostics report from attempt_(\S+): Error: java.net.NoRouteToHostException: No Route to Host from  (\S+) to (\S+) failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see:  http://wiki.apache.org/hadoop/NoRouteToHost
+Diagnostics report from attempt_(\S+): cleanup failed for container container_(\S+) : java.lang.IllegalArgumentException: java.net.UnknownHostException: (\S+)
+Diagnostics report from attempt_(\S+): Error: org.apache.hadoop.util.DiskChecker\$DiskErrorException: Could not find any valid local directory for (\S+)
+attempt_(\S+): Got (\S+) new map-outputs
+DFS chooseDataNode: got # (\S+) (\S+), will wait for (\S+) (\S+).
+Deleting staging directory (\S+) (\S+)
+Saved output of task 'attempt_(\S+)' to (\S+)
+Previous history file is at (\S+)
+Task attempt_(\S+) is allowed to commit now
+Ignoring obsolete output of (\S+) map-task: 'attempt_(\S+)'
+Task: attempt_(\S+) - failed due to FSError: java.io.IOException: There is not enough space on the disk
+Task: attempt_(\S+) - exited : org.apache.hadoop.mapreduce.task.reduce.Shuffle\$ShuffleError: error in shuffle in fetcher#(\S+)
+Task: attempt_(\S+) - exited : java.io.IOException: There is not enough space on the disk
+Task: attempt_(\S+) - exited : java.io.IOException: Spill failed
+Task: attempt_(\S+) - exited : java.net.NoRouteToHostException: No Route to Host from  (\S+) to (\S+) failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see:  http://wiki.apache.org/hadoop/NoRouteToHost
+Task: attempt_(\S+) - exited : org.apache.hadoop.util.DiskChecker\$DiskErrorException: Could not find any valid local directory for (\S+)
+Task cleanup failed for attempt attempt_(\S+)
+Read completed tasks from history (\S+)
+(\S+) metrics system shutdown complete.
+(\S+) metrics system started
+attempt_(\S+) Thread started: EventFetcher for fetching Map Completion Events
+TaskHeartbeatHandler thread interrupted
+Thread Thread\[(\S+),(\S+),(\S+)\] threw an Exception.
+Process Thread Dump: Communication exception
+Socket Reader #(\S+) for port (\S+): readAndProcess from client (\S+) threw exception \[java.io.IOException: An existing connection was forcibly closed by the remote host\]
+Slow ReadProcessor read fields took (\S+) \(threshold=(\S+)\); ack: seqno: (\S+) status: (\S+) status: (\S+) downstreamAckTimeNanos: (\S+), targets: \[(\S+), (\S+)\]
+Processing the event EventType: (\S+)
+Added attempt_(\S+) to list of failed maps
+Error writing History Event: (\S+)
+completedMapPercent (\S+) totalResourceLimit:<memory:(\S+), vCores:(\S+)> finalMapResourceLimit:<memory:(\S+), vCores:(\S+)> finalReduceResourceLimit:<memory:(\S+), vCores:(\S+)> netScheduledMapResource:<memory:(\S+), vCores:(\S+)> netScheduledReduceResource:<memory:(\S+), vCores:(\S+)>
+cleanup failed for container container_(\S+) : java.lang.IllegalArgumentException: java.net.UnknownHostException: (\S+)
+History url is (\S+)
+Commit-pending state update from attempt_(\S+)
+Commit go/no-go request from attempt_(\S+)
+Result of canCommit for attempt_(\S+):(\S+)
+Communication exception: java.io.IOException: Failed on local exception: java.io.IOException: An existing connection was forcibly closed by the remote host; Host Details : local host is: "(\S+)"; destination host is: "(\S+)":(\S+);
+Communication exception: java.net.ConnectException: Call From (\S+) to (\S+) failed on connection exception: java.net.ConnectException: Connection timed out: no further information; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+Communication exception: java.net.NoRouteToHostException: No Route to Host from  (\S+) to (\S+) failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see:  http://wiki.apache.org/hadoop/NoRouteToHost
+\(EQUATOR\) (\S+) kvi (\S+)\((\S+)\)
+\(RESET\) equator (\S+) kv (\S+)\((\S+)\) kvi (\S+)\((\S+)\)
+Down to the last merge-pass, with (\S+) segments left of total size: (\S+) bytes
+bufstart = (\S+); bufend = (\S+); bufvoid = (\S+)
+Successfully connected to (\S+) for (\S+)
+Container complete event for unknown container id container_(\S+)
+Failed to connect to (\S+) for block, add to deadNodes and continue. java.net.NoRouteToHostException: No route to host: no further information
+(\S+) failures on node (\S+)
+Address change detected. Old: (\S+) New: (\S+)
+Finished spill (\S+)
+MergerManager: memoryLimit=(\S+), maxSingleShuffleLimit=(\S+), mergeThreshold=(\S+), ioSortFactor=(\S+), memToMemMergeOutputsThreshold=(\S+)
+finalMerge called with (\S+) in-memory map-outputs and (\S+) on-disk map-outputs
+Failure sending status update: java.io.IOException: Failed on local exception: java.io.IOException: An existing connection was forcibly closed by the remote host; Host Details : local host is: "(\S+)"; destination host is: "(\S+)":(\S+);
+Reporting fetch failure for attempt_(\S+) to jobtracker.
+Merging (\S+) sorted segments
+Merging (\S+) files, (\S+) bytes from disk
+Merging (\S+) segments, (\S+) bytes from memory into reduce
+Merging (\S+) intermediate segments out of a total of (\S+)
+Failed to connect to (\S+) for block, add to deadNodes and continue. java.net.ConnectException: Connection timed out: no further information
+Failed to connect to (\S+) for block, add to deadNodes and continue. java.net.ConnectException: Connection refused: no further information
+Exception in getting events
+Exception while unregistering
+DataStreamer Exception
+IPC Server handler 29 on 58622 caught an exception
+Ignoring exception during close for org.apache.hadoop.mapred.MapTask\$NewOutputCollector@(\S+)
+Exception running child : org.apache.hadoop.util.DiskChecker\$DiskErrorException: Could not find any valid local directory for (\S+)
+Exception running child : org.apache.hadoop.mapreduce.task.reduce.Shuffle\$ShuffleError: error in shuffle in fetcher#(\S+)
+Task attempt_(\S+) failed : org.apache.hadoop.fs.FSError: java.io.IOException: There is not enough space on the disk
+Exception running child : java.net.NoRouteToHostException: No Route to Host from  (\S+) to (\S+) failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see:  http://wiki.apache.org/hadoop/NoRouteToHost
+Exception cleaning up: java.net.NoRouteToHostException: No Route to Host from  (\S+) to (\S+) failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see:  http://wiki.apache.org/hadoop/NoRouteToHost
+When stopping the service JobHistoryEventHandler : org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.net.NoRouteToHostException: No Route to Host from  (\S+) to (\S+) failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see:  http://wiki.apache.org/hadoop/NoRouteToHost
+Could not obtain (\S+) from any node: java.io.IOException: No live nodes contain block (\S+) after checking nodes = \[(\S+), (\S+)\], ignoredNodes = (\S+) No live nodes contain current block Block locations: (\S+) (\S+) Dead nodes:  (\S+) (\S+). Will get new block locations from namenode and retry...
+Could not obtain (\S+) from any node: java.io.IOException: No live nodes contain block (\S+) after checking nodes = \[(\S+), (\S+)\], ignoredNodes = (\S+) No live nodes contain current block Block locations: (\S+) (\S+) Dead nodes:  (\S+) (\S+) (\S+). Will get new block locations from namenode and retry...
+IPC Server handler (\S+) on (\S+), call statusUpdate\(attempt_(\S+), org.apache.hadoop.mapred.MapTaskStatus@(\S+)\), rpc version=(\S+), client version=(\S+), methodsFingerPrint=(\S+) from (\S+) Call#(\S+) Retry#(\S+): output error
+Runnning cleanup for the task
+Error communicating with RM: Could not contact RM after (\S+) milliseconds.
+Could not contact RM after (\S+) milliseconds.
+Found jobId job_(\S+) to have not been closed. Will close
+Error closing writer for JobID: job_(\S+)
+Assigned from earlierFailedMaps
+Calling handler for JobFinishedEvent
+Spilling map output
+Setting job diagnostics to
+Map output collector class = org.apache.hadoop.mapred.MapTask\$MapOutputBuffer
+We are finishing cleanly so this is the last retry
+Waiting for application to be successfully unregistered.
+Starting flush of map output
+EventFetcher is interrupted.. Returning
+Unable to parse prior job history, aborting recovery
+Could not parse the old history file. Will not have old AMinfos
+Recovery is enabled. Will try to recover from previous life on best effort basis.
+Going to preempt (\S+) due to lack of space for maps
+All maps assigned. Ramping up all remaining reduces:(\S+)
+Ramping down all scheduled reduces:(\S+)
+MapCompletionEvents reques
+I/O error constructing remote block reader.
+ERROR IN CONTACTING RM.
+Preempting attempt_(\S+)
+Reduce preemption successful attempt_(\S+)
+Failed to connect to (\S+) with (\S+) map outputs
+Connection retry failed with (\S+) attempts in (\S+) seconds
+Skipping cleaning up the staging dir. assuming AM will be retried.
+Error communicating with RM: Resource Manager doesn't recognize AttemptId: application_(\S+)
