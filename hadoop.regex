@@ -12,7 +12,6 @@ OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
 Emitting job history data to the timeline server is not enabled
 Not uberizing (\S+) because: not enabled; too many maps; too much input;
 Jetty bound to port (\S+)
-MRAppMaster metrics system started
 Resolved (\S+) to /default-rack
 Http request log for http.requests.mapreduce is not defined
 Added filter AM_PROXY_FILTER \(class=(\S+)\) to context static
