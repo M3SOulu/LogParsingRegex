@@ -79,7 +79,7 @@ session opened for user (\S+) by (\S*)\(uid=(\S+)\)
 session closed for user (\S+)
 Device: (\S+), opened
 Opened configuration file (\S+)
-\[<(\S+)>\] (\S+)\/(\S+)(?: \[(\S+)\])?
+\[<(\S+)>\] (\S+)/(\S+)(?: \[(\S+)\])?
 creating device node '(\S+)'
 removing device node '(\S+)'
 ov (\S+) (\S+) combo last message repeated (\S+) times
