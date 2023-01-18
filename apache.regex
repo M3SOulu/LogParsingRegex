@@ -11,7 +11,7 @@
 \[client (\S+)\] client sent (\S+) request without hostname \(see (\S+) section (\S+)\): /
 (\S+) Found child (\S+) in scoreboard slot (\S+)
 (\S+) Can't find child (\S+) in scoreboard
-(\S+) ok /etc/httpd/conf/workers2.properties
+(\S+) ok (\S+)
 (\S+) uri must start with /
 (\S+) child workerEnv in error state (\S+)
 (\S+) child init (\S+) (\S+)
