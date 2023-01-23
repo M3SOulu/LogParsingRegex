@@ -1,11 +1,7 @@
 NIFF: node node-(\S+) has detected an available network connection on network (\S+) via interface (\S+)
 NIFF: node node-(\S+) detected a failed network connection on network (\S+) via interface (\S+)
-
 Component State Change: Component (\S+) is in the available state \(HWID=(\S+)\)
 Component State Change: Component (\S+) is in the unavailable state \(HWID=(\S+)\)
-
-
-
 boot  ?\(command (\S+)\)
 boot \(command (\S+)\) Error: HALT asserted\\  cannot continue
 boot \(command (\S+)\) Error: Console-Busy Port already in use
@@ -16,70 +12,41 @@ boot \(command (\S+)\) Error: node went to SRM while trying to boot
 boot \(command (\S+)\) Error: timeout waiting for Loading LMF licenses
 boot \(command (\S+)\) Error: timeout while booting.
 boot \(command (\S+)\) Error: CMF-Port This node\\047s port is not connected
-
 haltcluster  ?\(command (\S+)\)
 haltcluster \(command (\S+)\) Error: haltcluster: bad spawn id
 haltcluster \(command (\S+)\) Error: timeout waiting for SRM prompts
-
-
 wait  ?\(command (\S+)\)
 wait \(command (\S+)\) Error: Unknown We failed to determine the state of this node
 wait \(command (\S+)\) Error: Console-Busy Port already in use
-
-
 halt  ?\(command (\S+)\)
 halt \(command (\S+)\) Error: scrun failed\\  couldn\\047t send shutdown command
 halt \(command (\S+)\) Error: Couldn\\047t Connect to console \(state = (\S+)\)
 halt \(command (\S+)\) Error: timeout waiting for SRM prompt
-
-
-
 clusterAddMember  ?\(command (\S+)\)
 clusterAddMember \(command (\S+)\) Error: cluster_add_member failed unexpectedly\\  check (\S+): <(\S+) code errored: kill: (\S+): no such process>
 clusterAddMember \(command (\S+)\) Error: Cannot run clusterAddMember\\  because node-(\S+) connection state is (\S+) and needs to be SRM
-
 risBoot  ?\(command (\S+)\)
 risBoot \(command (\S+)\) Error: failed to RIS boot: <(\S+) code completed>
 risBoot \(command (\S+)\) Error: Timed out while waiting for SRM prompt: <(\S+) code completed>
-
-
 bootGenvmunix  ?\(command (\S+)\)
 bootGenvmunix \(command (\S+)\) Error: Timeout waiting for system to come up: <(\S+) code completed>
 bootGenvmunix \(command (\S+)\) Error: node returned to srm while booting: <(\S+) code completed>
-
 member_delete  ?\(command (\S+)\)
 member_delete \(command (\S+)\) Error: node-(\S+) is NOT a member of cluster node-(\S+)
 member_delete \(command (\S+)\) Error: node is up according to cluster_get_info
-
 ClusterFileSystem: ServerFileSystem domain (\S+) is no longer served by node node-(\S+)
 ClusterFileSystem: There is no server for ServerFileSystem domain (\S+)
-
 ServerFileSystem: ServerFileSystem domain (\S+) is full
 ServerFileSystem: An ServerFileSystem domain panic has occurred on (\S+)
-
-
-
-
 Targeting domains:node-D(?:(\d+)|\[(?:(\d+)-(\d+)|(\d+))(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?\]) and nodes:node-(?:(\d+)|\[(?:(\d+)-(\d+)|(\d+))(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?\])
 Targeting domains:node-D(?:(\d+)|\[(?:(\d+)-(\d+)|(\d+))(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?\]) and nodes:node-(?:(\d+)|\[(?:(\d+)-(\d+)|(\d+))(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?(?:\\ (?:(\d+)-(\d+)|(\d+)))?\]) child of command (\d+)
-
-
-
-
 Command Failed on: node-(\S+)(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?(?:\\ node-(\S+))?
 Failed subcommands (\S+)(?:\\ (\S+))?(?:\\ (\S+))?(?:\\ (\S+))?(?:\\ (\S+))?(?:\\ (\S+))?(?:\\ (\S+))?(?:\\ (\S+))?(?:\\ (\S+))?
-
-
 Command has completed successfully
-
 inconsistent nodesets node-(\S+) (\S+) <ok>(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?(?: node-(\S+) (\S+) <ok>)?
-
 Fan speeds \( (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) \)
 Link error on broadcast tree Interconnect-(\S+)
-
-
 failed to configure resourcemgmt subsystem err = (\S+)
-
 fan(\S+) has failed
 warning
 critical
@@ -100,8 +67,6 @@ unknown
 responding
 not-responding
 ambient=(\S+)
-
-
 PSU status \( (\S+) (\S+) \)
 psu failure\\ ambient=(\S+)
 ambient=(\S+)  threshold exceeded
@@ -111,7 +76,6 @@ Command has been aborted
 Linkerror event interval expired
 Command Cancelled - cluster would lose quorum
 link errors remain current
-
 Link error
 Link in reset
 Link ok
