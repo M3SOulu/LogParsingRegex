@@ -13,7 +13,7 @@ handleNotifyScreenTurnedOn
 onScreenTurnedOn
 getNextIndex: (\S+); from (\S+) to (\S+); size: (\S+)
 report msg is :\{picture: (\S+)\}
-report result = falsereport type:(\S+) msg: \{picture: (\S+), channelId: (\S+)\}
+report result = (\S+) type:(\S+) msg:\{picture: (\S+), channelId: (\S+)\}
 Screen already turned on at: (\S+)
 Split enqueueing broadcast \[callerApp\]:ProcessRecord\{(\S+) (\S+)\}
 EventCenter Get :(\S+)
@@ -50,7 +50,7 @@ RetryTaskController:mTaskList is (\S+)
 updateNotificationShade
 removeNotificationChildren
 showNotificationAll
-main\{(\S+)\} PushService.onStartCommand\((\S+)\) Push Service Start by  userEvent
+main\{(\S+)\} PushService.onStartCommand\((\S+)\) Push Service Start by  (\S+)
 uid:(\S+) pid:(\S+) PhoneStateListener.LISTEN_CELL_LOCATION:(\S+) events:(\S+)
 LISTEN_CELL_LOCATION uid:(\S+)
 WatchThread\{(\S+)\} TcpCirChannel.shutdown\((\S+)\) Login_By_Step-> shut down now connect
@@ -60,16 +60,7 @@ transferRemoteInputFocus: (\S+)
 updateClipping isOverlap:(\S+)
 updateDimmedActivatedHideSensitive overlap:(\S+)
 \[ACC\]processReportInd: X: (\S+) Y: (\S+) Z: (\S+)  x_offset:(\S+) y_offset:(\S+) z_offset:(\S+)
-PowerManager_screenOn: DisplayPowerState Updating screen state: state=(\S+), backlight=(\S+)
-DisplayPowerController: Finished business...
-SendBroadcastPermission: action:(\S+), mPermissionType:(\S+)
-DisplayPowerController: Animating brightness: target=(\S+), rate=(\S+)
-HwSystemManager: ITrafficInfo:ITrafficInfo create (\S+)updateBytes = (\S+)
-OucScreenOnCounter: Screen already turned on at: (\S+)
-HwActivityManagerService: Split enqueueing broadcast \[(\S+)\]:ProcessRecord\{(\S+) (\S+):(\S+)\}
-KGWallpaper_Magazine: getNextIndex: (\S+); from (\S+) to (\S+); size: (\S+)
-report result = (\S+) type:(\S+) msg:\{picture: (\S+), channelId: (\S+)\}
-onChange selfChange:(\S+) uri.toString():(\S+) mIsObserveAutoBrightnessChange:(\S+)
+action:(\S+), mPermissionType:(\S+)
 WatchThread\{(\S+)\} TcpClient.clearAll\((\S+):(\S+)\) ==================== TCP CLIENT CLEAR ALL ====================
 WatchThread\{(\S+)\} TcpClient.disconnect_i\((\S+):(\S+)\) ==================== TCP CLIENT DISCONNECT ====================
 WatchThread\{(\S+)\} TcpSocket.close\((\S+):(\S+)\) shutdown input: java.net.SocketException: Socket is closed

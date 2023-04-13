@@ -47,7 +47,6 @@ BLOCK\* NameSystem.allocateBlock: (\S+) blk_(\S+)
 BLOCK\* NameSystem.delete: blk_(\S+) is added to invalidSet of (\S+)
 BLOCK\* Removing block blk_(\S+) from neededReplications as it does not belong to any file\.
 BLOCK\* ask (\S+) to replicate blk_(\S+) to datanode\(s\) (\S+)(?: (\S+))?
-BLOCK\* ask (\S+) to delete blk_(\S+)
 BLOCK\* NameSystem.addStoredBlock: blockMap updated: (\S+) is added to blk_(\S+) size (\S+)
 BLOCK\* NameSystem.addStoredBlock: Redundant addStoredBlock request received for blk_(\S+) on (\S+) size (\S+)
 BLOCK\* NameSystem.addStoredBlock: addStoredBlock request received for blk_(\S+) on (\S+) size (\S+) But it does not belong to any file.

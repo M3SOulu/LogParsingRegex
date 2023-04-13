@@ -1,21 +1,13 @@
 (\S+) "GET (\S+) (\S+)" status: (\S+) len: (\S+) time: (\S+)
-(\S+) "POST (\S+) (\S+) status: (\S+) len: (\S+) time: (\S+)
-(\S+) "DELETE (\S+) (\S+) status: (\S+) len: (\S+) time: (\S+)
-Deleting instance files (\S+)
-Took (\S+) seconds to destroy the instance on the hypervisor.
+(\S+) "POST (\S+) (\S+)" status: (\S+) len: (\S+) time: (\S+)
+(\S+) "DELETE (\S+) (\S+)" status: (\S+) len: (\S+) time: (\S+)
 image (\S+) at (\S+) checking
 image (\S+) at (\S+) in use: on this node (\S+) local, (\S+) on other nodes sharing this instance storage
 Active base files: (\S+)
-Took (\S+) seconds to deallocate network for instance.
 Unknown base file: (\S+)
 Removable base files: (\S+)
 Removing base or swap file: (\S+)
-Attempting claim: memory (\S+) (\S+), disk (\S+) (\S+), vcpus (\S+) CPU
 Base or swap file too young to remove: (\S+)
-Total disk: (\S+) GB, used: (\S+) GB
-memory limit: (\S+) MB, free: (\S+) MB
-vcpu limit not specified, defaulting to unlimited
-Total memory: (\S+) MB, used: (\S+) MB
 Compute_service record updated for (\S+)
 Final resource view: name=(\S+) phys_ram=(\S+) used_ram=(\S+) phys_disk=(\S+) used_disk=(\S+) total_vcpus=(\S+) used_vcpus=(\S+) pci_stats=(\S+)
 \[instance: (\S+)\] During sync_power_state the instance has a pending task \(spawning\). Skip.
@@ -55,4 +47,4 @@ Running instance usage audit for host (\S+) from (\S+) (\S+) to (\S+) (\S+)\. (\
 Unable to validate token: Failed to fetch token data from identity server
 couldn't obtain the vcpu count from domain id: (\S+) exception: Requested operation is not valid: cpu affinity is not supported
 Bad response code while validating token: (\S+)
-Identity response: (<!DOCTYPE) (HTML) (PUBLIC) ("-//IETF//DTD) (HTML) (2.0//EN">)
+Identity response: (.+)

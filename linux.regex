@@ -1,6 +1,4 @@
-authentication failure; logname=(\S*) uid=(\S+) euid=(\S+) tty=(\S+) ruser=(\S*) rhost=(\S+) user=(\S+)
 Connection from (\S+) on illegal port
-audit\((\S+)\): avc: denied \{ getattr \} for pid=(\S+) exe=(\S+) path=(\S+) dev=(\S*) ino=(\S+) scontext=(\S+) tcontext=(\S+) tclass=(\S+)
 BIOS-e820: (\S+) - (\S+) \(reserved\)
 BIOS-e820: (\S+) - (\S+) \(usable\)
 (\S+) startup succeeded
@@ -8,21 +6,19 @@ zapping low mappings\.
 (\S+) (\S+), log source = (\S+) started\.
 (\S+) HIGHMEM available\.
 (\S+) LOWMEM available\.
-On node 0 totalpages: 32430
+On node (\S+) totalpages: (\S+)
 (\S+) zone: (\S+) pages, LIFO batch:(\S+)
 (\S+) (\S+) present.
 ACPI disabled because your bios is from (\S+) and too old
 You can enable it with acpi=force
 Built (\S+) zonelists
-ce: (\S+) startup succeeded
 mapped 4G/4G trampoline to (\S+).
 Initializing (\S+)
 CPU (\S+) (\S+), hard=(\S+) soft=(\S+)
 (\S+) hash table entries: (\S+) \(order (\S+): (\S+) bytes\)
 Detected (\S+) (\S+) processor.
 Using tsc for high-res timesource
-Console: colour VGA+ (\S+)
-Console: colour VGA+ 80x25
+Console: colour VGA\+ (\S+)
 Memory: (\S+) available \((\S+) kernel code, (\S+) reserved, (\S+) data, (\S+) init, (\S+) highmem\)
 Calibrating delay loop\.{3} (\S+) (\S+)
 (\S+) (\S+)(?: (\S+))? initialized
@@ -68,7 +64,7 @@ audit: (\S+) \(after initialization\)
 no longer listening on (\S+)
 (\S+) shutdown failed
 cdrom: open failed.
-bind failed \(Address already in use \(errno = 98\)\)\. service = telnet
+bind failed \(Address already in use \(errno = (\S+)\)\)\. service = telnet
 (\S+) failed
 (\S+) failed, user does not have proper access: (\S+)
 Service (\S+) failed to start and is deactivated\.
@@ -82,7 +78,6 @@ Opened configuration file (\S+)
 \[<(\S+)>\] (\S+)/(\S+)(?: \[(\S+)\])?
 creating device node '(\S+)'
 removing device node '(\S+)'
-ov (\S+) (\S+) combo last message repeated (\S+) times
 EXT3-fs: write access will be enabled during recovery.
 EXT3-fs: INFO: recovery required on readonly filesystem.
 EXT3-fs: recovery complete.
@@ -109,7 +104,7 @@ Bluetooth: (\S+) ver (\S+)
 Bluetooth: (\S+) TTY layer initialized
 Bluetooth: (\S+) socket layer initialized
 PCI: Invalid ACPI-PCI IRQ routing table
-PCI: PCI BIOS revision (\S+) entry at (\S+), last bus=('S+)
+PCI: PCI BIOS revision (\S+) entry at (\S+), last bus=(\S+)
 PCI: Probing PCI hardware
 PCI: Using configuration type (\S+)
 PCI: Probing PCI hardware \(bus (\S+)\)
@@ -123,7 +118,6 @@ EXT3 FS on (\S+), internal journal
 EXT3-fs: hda2: orphan cleanup on readonly fs
 VFS: Mounted root \((\S+) filesystem\)\.
 Adding (\S+) swap on (\S+)\.  Priority:(\S+) extents:(\S+)
-ANONYMOUS FTP LOGIN FROM (\S+),  (anonymous)
 getpeername \(ftpd\): Transport endpoint is not connected
 ANONYMOUS FTP LOGIN FROM (\S+), (\S+)? \((\S+)\)
 VM: killing process (\S+)
@@ -135,4 +129,4 @@ TCP: Hash tables configured \(established (\S+) bind (\S+)\)
 (\S+) at I/O (\S+) \(irq = (\S+)\) is a (\S+)
 (\S+) LOGIN ON (\S+)
 (\S+): invalid character (\S+) in login name
-hdc: Disabling (U)DMA for (\S+) (\S+) (\S+) (blacklisted)
+hdc: Disabling \(U\)DMA for (\S+) (\S+) (\S+) \(blacklisted\)

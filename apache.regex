@@ -26,4 +26,4 @@
 child process (\S+) still did not exit, sending a SIGTERM
 suEXEC mechanism enabled \(wrapper: (\S+)\)
 Graceful restart requested, doing restart
-(\S+)/(\S+)(?: \((\S+)\))? configured(?: -- resuming normal operations)?
+(\S+)/(\S+)( \(\S+\))? configured(?: -- resuming normal operations)?

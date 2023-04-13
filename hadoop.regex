@@ -16,7 +16,6 @@ Resolved (\S+) to /default-rack
 Http request log for http.requests.mapreduce is not defined
 Added filter AM_PROXY_FILTER \(class=(\S+)\) to context static
 Adding job token for (\S+) to jobTokenSecretManager
-adding path spec: /ws/*
 Input size for job (\S+) = (\S+) Number of splits = (\S+)
 Using callQueue class java.util.concurrent.LinkedBlockingQueue
 Extract (\S+) to (\S+)
@@ -28,7 +27,6 @@ IPC Server listener on (\S+) starting
 nodeBlacklistingEnabled:(\S+)
 (\S+) TaskAttempt Transitioned from (\S+) to (\S+)
 Added filter AM_PROXY_FILTER \(class=(\S+)\) to context mapreduce
-adding path spec: /mapreduce/*
 Using mapred newApiCommitter.
 Instantiated MRClientService at (\S+)
 queue: default
@@ -45,9 +43,8 @@ Default file system (\S+)
 Scheduled snapshot period at (\S+) second\(s\).
 Size of (\S+) is (\S+)
 Received completed container (\S+)
-Container exited with a non-zero exit code (\S+)
 Num completed Tasks: (\S+)
-DFSOutputStream ResponseProcessor exception for block (\S+)
+DFSOutputStream ResponseProcessor exception  for block (\S+)
 Assigned container (\S+) to (\S+)
 Assigned to reduce
 Shuffle port returned by ContainerManager for (\S+) : (\S+)
@@ -68,23 +65,18 @@ TaskAttempt: (\S+) using containerId: (\S+) on NM: (\S+)
 Opening proxy : (\S+)
 The (\S+) file on the remote FS is (\S+)
 Container killed on request. Exit code is (\S+)
-DFSOutputStream ResponseProcessor exception for block (\S+)
 Reduce slow start threshold reached. Scheduling reduces.
-Auth successful for (\S+) (auth:SIMPLE)
 Got allocated containers (\S+)
 Putting shuffle token in serviceData
 ([A-Z_]+) (\S+)
 MapCompletionEvents request from (\S+) startIndex (\S+) maxEvents (\S+)
 Auth successful for (\S+) \(auth:([A-Z]+)\)
 Diagnostics report from (\S+): Container killed by the (\S+).
-(\S+): Bad response ERROR for block (\S+) from datanode (\S+)
-DFSOutputStream ResponseProcessor exception  for block (\S+)
 After Scheduling: PendingReds:(\S+) ScheduledMaps:(\S+) ScheduledReds:(\S+) AssignedMaps:(\S+) AssignedReds:(\S+) CompletedMaps:(\S+) CompletedReds:(\S+) ContAlloc:(\S+) ContRel:(\S+) HostLocal:(\S+) RackLocal:(\S+)
 getResources\(\) for (\S+): ask=(\S+) release= (\S+) newContainers=(\S+) finishedContainers=(\S+) resourcelimit=<memory:(\S+), vCores:(\S+)> knownNMs=(\S+)
 We launched (\S+) speculations.  Sleeping (\S+) milliseconds.
 DefaultSpeculator.addSpeculativeAttempt -- we are speculating (\S+)
 Ramping up (\S+)
-completedMapPercent (\S+) totalResourceLimit:<memory:(\S+), vCores:(\S+)> finalMapResourceLimit:<memory:(\S+), vCores:(\S+)> finalReduceResourceLimit:<memory:(\S+), vCores:(\S+)> netScheduledMapResource:<memory:(\S+), vCores:(\S+)> netSchhadoop.regexeduledReduceResource:<memory:(\S+), vCores:(\S+)>
 Recalculating schedule, headroom=<memory:(\S+), vCores:(\S+)>
 Reduce slow start threshold not met. completedMapsForReduceSlowstart (\S+)
 Adding (\S+) tokens and (\S+) secret keys for (\S+) use for launching container
@@ -94,7 +86,6 @@ Kind: mapreduce.job, Service: (\S+), Ident: \((\S+)\)
 Sleeping for (\S+) before retrying again. Got null now.
 Retrying connect to server: (\S+). Already tried (\S+) time\(s\); maxRetries=(\S+)
 Retrying connect to server: (\S+). Already tried (\S+) time\(s\); retry policy is RetryUpToMaximumCountWithFixedSleep\(maxRetries=(\S+), sleepTime=(\S+) (\S+)\)
-Diagnostics report from (\S+) Container released on a \*lost\* nodehadoop.regex
 Killing (\S+) because it is running on unusable (\S+)
 Stopped JobHistoryEventHandler\. super\.stop\(\)
 Moved tmp to done: (\S+)
@@ -107,7 +98,6 @@ soft limit at (\S+)
 mapreduce.task.io.sort.mb: (\S+)
 Processing split: (\S+)
 Copying (\S+) to (\S+)
-(/history/done_intermediate/msrabi/(?:.+))
 Excluding datanode (\S+)
 Abandoning (\S+)
 bufstart = (\S+) bufvoid = (\S+)
@@ -253,7 +243,6 @@ Recovery is enabled. Will try to recover from previous life on best effort basis
 Going to preempt (\S+) due to lack of space for maps
 All maps assigned. Ramping up all remaining reduces:(\S+)
 Ramping down all scheduled reduces:(\S+)
-MapCompletionEvents reques
 I/O error constructing remote block reader.
 ERROR IN CONTACTING RM.
 Preempting attempt_(\S+)

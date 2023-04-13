@@ -4,17 +4,17 @@ FOLLOWING
 Shutting down
 shutdown called
 shutting down
-Accepted socket connection from /(\S+):(\S+)
-Connection request from old client /(\S+):(\S+); will be dropped if server is in r-o mode
-Established session (\S+) with negotiated timeout (\S+) for client /(\S+):(\S+)
-Client attempting to establish new session at /(\S+):(\S+)
-Client attempting to renew session (\S+) at /(\S+):(\S+)
-Closed socket connection for client /(\S+):(\S+) \(no session established for client\)
-Closed socket connection for client /(\S+):(\S+) which had sessionid (\S+)
+Accepted socket connection from /(\S+)
+Connection request from old client /(\S+); will be dropped if server is in r-o mode
+Established session (\S+) with negotiated timeout (\S+) for client /(\S+)
+Client attempting to establish new session at /(\S+)
+Client attempting to renew session (\S+) at /(\S+)
+Closed socket connection for client /(\S+) \(no session established for client\)
+Closed socket connection for client /(\S+) which had sessionid (\S+)
 Interrupted while waiting for message on queue
 Expiring session (\S+), timeout of (\S+) exceeded
 Processed session termination for sessionid: (\S+)
-Received connection request /(\S+):(\S+)
+Received connection request /(\S+)
 Notification: (\S+) \(n.leader\), (\S+) \(n.zxid\), (\S+) \(n.round\), (\S+) \(n.state\), (\S+) \(n.sid\), (\S+) \(n.peerEPoch\), (\S+) \(my state\)
 Revalidating client: (\S+)
 New election. My id =  (\S+), proposed zxid=(\S+)
@@ -22,8 +22,8 @@ Synchronizing with Follower sid: (\S+) maxCommittedLog=(\S+) minCommittedLog=(\S
 Follower sid: (\S+) : info : (\S+)
 FOLLOWING - LEADER ELECTION TOOK - (\S+)
 LEADING - LEADER ELECTION TOOK - (\S+)
-\*{7} GOODBYE /(\S+):(\S+) \*{8}
-Commiting zxid (\S+) from /(\S+):(\S+) not first!
+\*{7} GOODBYE /(\S+) \*{8}
+Commiting zxid (\S+) from /(\S+) not first!
 Have quorum of supporters; starting up and setting last processed zxid: (\S+)
 Sending snapshot last zxid of peer is (\S+)  zxid of leader is (\S+) zxid of db as (\S+)
 Exception causing close of session (\S+) due to java.io.IOException: Connection reset by peer
@@ -36,13 +36,13 @@ Getting a diff from the leader (\S+)
 Creating new log file: (\S+)
 Getting a snapshot from leader
 Notification time out: (\S+)
-Unexpected exception, tries=(\S+), connecting to /(\S+):(\S+)
+Unexpected exception, tries=(\S+), connecting to /(\S+)
 Sending (\S+)
 First is (\S+)
 autopurge.snapRetainCount set to (\S+)
 Defaulting to majority quorums
 Starting quorum peer
-binding to port (\S+)/(\S+):(\S+)
+binding to port (\S+)/(\S+)
 Purge task is not scheduled.
 autopurge.purgeInterval set to (\S+)
 Reading configuration from: (\S+)
@@ -54,8 +54,8 @@ currentEpoch not found! Creating with a reasonable default of (\S+). This should
 acceptedEpoch not found! Creating with a reasonable default of (\S+). This should only happen when you are upgrading your installation
 Server environment:(\S+)=(.+)
 Created server with tickTime (\S+) minSessionTimeout (\S+) maxSessionTimeout (\S+) datadir (\S+) snapdir (\S+)
-My election bind port: (\S+)/(\S+):(\S+)
-Cannot open channel to (\S+) at election address /(\S+):(\S+)
+My election bind port: (\S+)/(\S+)
+Cannot open channel to (\S+) at election address /(\S+)
 TCP NoDelay set to: (\S+)
 Interrupting SendWorker
 Send worker leaving thread
