@@ -1,4 +1,4 @@
-Created MRAppMaster for application (\S+)
+Created MRAppMaster for application appattempt_(\S+)
 Executing with tokens:
 Connecting to ResourceManager at (\S+)
 Starting Socket Reader (\S+) for port (\S+)
@@ -7,39 +7,41 @@ Upper limit on the thread pool size is (\S+)
 loaded properties from (\S+)
 Adding protocol (\S+) to the server
 Logging to (\S+) via (\S+)
-maxContainerCapability: (\S+) (\S+)
-OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+maxContainerCapability: <memory:(\S+), vCores:(\S+)>
+mapResourceRequest:<memory:(\S+), vCores:(\S+)>
+reduceResourceRequest:<memory:(\S+), vCores:(\S+)>
+OutputCommitter is (\S+)
 Emitting job history data to the timeline server is not enabled
-Not uberizing (\S+) because: not enabled; too many maps; too much input;
+Not uberizing job_(\S+) because: not enabled; too many maps; too much input;
 Jetty bound to port (\S+)
-Resolved (\S+) to /default-rack
-Http request log for http.requests.mapreduce is not defined
+Resolved (\S+) to (\S+)
+Http request log for (\S+) is not defined
 Added filter AM_PROXY_FILTER \(class=(\S+)\) to context static
-Adding job token for (\S+) to jobTokenSecretManager
-Input size for job (\S+) = (\S+) Number of splits = (\S+)
-Using callQueue class java.util.concurrent.LinkedBlockingQueue
+Adding job token for job_(\S+) to jobTokenSecretManager
+Input size for job job_(\S+) = (\S+) Number of splits = (\S+)
+Using callQueue class (\S+)
 Extract (\S+) to (\S+)
-Added global filter 'safety' (\S+)
-MRAppMaster launching normal, non-uberized, multi-container job (\S+)
+Added global filter 'safety' \(class=(\S+)\)
+MRAppMaster launching normal, non-uberized, multi-container job job_(\S+)\.
 Kind: YARN_AM_RM_TOKEN, Service: , Ident: \(appAttemptId \{ application_id \{ id: (\S+) cluster_timestamp: (\S+) \} attemptId: (\S+) \} keyId: (\S+)\)
 Web app /mapreduce started at (\S+)
-IPC Server listener on (\S+) starting
+IPC Server listener on (\S+): starting
 nodeBlacklistingEnabled:(\S+)
 (\S+) TaskAttempt Transitioned from (\S+) to (\S+)
 Added filter AM_PROXY_FILTER \(class=(\S+)\) to context mapreduce
 Using mapred newApiCommitter.
 Instantiated MRClientService at (\S+)
 queue: default
-Number of reduces for job (\S+) = (\S+)
+Number of reduces for job job_(\S+) = (\S+)
 maxTaskFailuresPerNode is (\S+)
 OutputCommitter set in config null
-(\S+) Task Transitioned from (\S+) to (\S+)
+task_(\S+) Task Transitioned from (\S+) to (\S+)
 Registered webapp guice modules
 Registering class (\S+) for class (\S+)
 yarn.client.max-cached-nodemanagers-proxies : (\S+)
 IPC Server Responder: starting
 Started (\S+)
-Default file system (\S+)
+Default file system \[(\S+)\]
 Scheduled snapshot period at (\S+) second\(s\).
 Size of (\S+) is (\S+)
 Received completed container (\S+)
@@ -47,21 +49,20 @@ Num completed Tasks: (\S+)
 DFSOutputStream ResponseProcessor exception  for block (\S+)
 Assigned container (\S+) to (\S+)
 Assigned to reduce
-Shuffle port returned by ContainerManager for (\S+) : (\S+)
-Launching (\S+)
-Progress of TaskAttempt (\S+) is : (\S+)
-Done acknowledgement from (\S+)
-Processing the event EventType: (\S+) for container (\S+) taskAttempt (\S+)
+Shuffle port returned by ContainerManager for attempt_(\S+) : (\S+)
+Launching attempt_(\S+)
+Progress of TaskAttempt attempt_(\S+) is : (\S+)
+Done acknowledgement from attempt_(\S+)
+Processing the event EventType: (\S+) for container container_(\S+) taskAttempt attempt_(\S+)
 After Scheduling: (\S+)
-Task succeeded with attempt (\S+)
-Scheduling a redundant attempt for task (\S+)
-Event Writer setup for JobId: (\S+) File: (\S+)
-Error Recovery for block (\S+) in pipeline (\S+) (\S+) bad datanode (\S+)
-(\S+):<memory:(\S+), vCores:(\S+)>
+Task succeeded with attempt attempt_(\S+)
+Scheduling a redundant attempt for task task_(\S+)
+Event Writer setup for JobId: job_(\S+) File: (\S+)
+Error Recovery for block (\S+) in pipeline (\S+), (\S+) bad datanode (\S+)
 Before Scheduling: PendingReds:(\S+) ScheduledMaps:(\S+) ScheduledReds:(\S+) AssignedMaps:(\S+) AssignedReds:(\S+) CompletedMaps:(\S+) CompletedReds:(\S+) ContAlloc:(\S+) ContRel:(\S+) HostLocal:(\S+) RackLocal:(\S+)
-JVM with ID : (\S+) asked for a task
-JVM with ID: (\S+) given task: (\S+)
-TaskAttempt: (\S+) using containerId: (\S+) on NM: (\S+)
+JVM with ID : jvm_(\S+) asked for a task
+JVM with ID: jvm_(\S+) given task: attempt_(\S+)
+TaskAttempt: \[(\S+)\] using containerId: \[(\S+) on NM: \[(\S+)\]
 Opening proxy : (\S+)
 The (\S+) file on the remote FS is (\S+)
 Container killed on request. Exit code is (\S+)
@@ -69,28 +70,27 @@ Reduce slow start threshold reached. Scheduling reduces.
 Got allocated containers (\S+)
 Putting shuffle token in serviceData
 ([A-Z_]+) (\S+)
-MapCompletionEvents request from (\S+) startIndex (\S+) maxEvents (\S+)
-Auth successful for (\S+) \(auth:([A-Z]+)\)
-Diagnostics report from (\S+): Container killed by the (\S+).
+MapCompletionEvents request from attempt_(\S+) startIndex (\S+) maxEvents (\S+)
+Auth successful for job_(\S+) \(auth:([A-Z]+)\)
 After Scheduling: PendingReds:(\S+) ScheduledMaps:(\S+) ScheduledReds:(\S+) AssignedMaps:(\S+) AssignedReds:(\S+) CompletedMaps:(\S+) CompletedReds:(\S+) ContAlloc:(\S+) ContRel:(\S+) HostLocal:(\S+) RackLocal:(\S+)
-getResources\(\) for (\S+): ask=(\S+) release= (\S+) newContainers=(\S+) finishedContainers=(\S+) resourcelimit=<memory:(\S+), vCores:(\S+)> knownNMs=(\S+)
+getResources\(\) for application_(\S+): ask=(\S+) release= (\S+) newContainers=(\S+) finishedContainers=(\S+) resourcelimit=<memory:(\S+), vCores:(\S+)> knownNMs=(\S+)
 We launched (\S+) speculations.  Sleeping (\S+) milliseconds.
-DefaultSpeculator.addSpeculativeAttempt -- we are speculating (\S+)
+DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_(\S+)
 Ramping up (\S+)
 Recalculating schedule, headroom=<memory:(\S+), vCores:(\S+)>
 Reduce slow start threshold not met. completedMapsForReduceSlowstart (\S+)
 Adding (\S+) tokens and (\S+) secret keys for (\S+) use for launching container
 adding path spec: (\S+)
-(\S+) Transitioned from (\S+) to (\S+)
-Kind: mapreduce.job, Service: (\S+), Ident: \((\S+)\)
+job_(\S+) Transitioned from (\S+) to (\S+)
+Kind: mapreduce.job, Service: job_(\S+), Ident: \((\S+)\)
 Sleeping for (\S+) before retrying again. Got null now.
 Retrying connect to server: (\S+). Already tried (\S+) time\(s\); maxRetries=(\S+)
 Retrying connect to server: (\S+). Already tried (\S+) time\(s\); retry policy is RetryUpToMaximumCountWithFixedSleep\(maxRetries=(\S+), sleepTime=(\S+) (\S+)\)
-Killing (\S+) because it is running on unusable (\S+)
+Killing taskAttempt:attempt_(\S+) because it is running on unusable node:(\S+)
 Stopped JobHistoryEventHandler\. super\.stop\(\)
 Moved tmp to done: (\S+)
-Using (\S+)\s*: (\S+)@(\S+)
-ProcfsBasedProcessTree currently is supported only on Linux.
+Using (\S+)\s*: (\S+)
+(\S+) currently is supported only on (\S+).
 (\S+) is deprecated. Instead, use (\S+)
 (\S+) for child: (\S+)
 Copied to done location: (\S+)
@@ -103,14 +103,13 @@ Abandoning (\S+)
 bufstart = (\S+) bufvoid = (\S+)
 Calling stop for all the services
 Stopping JobHistoryEventHandler. Size of the outstanding queue size is (\S+)
-RMCommunicator notified that shouldUnregistered is: (\S+)
+(\S+) notified that (\S+) is:? (\S+)
 Notify (\S+) isAMLastRetry: (\S+)
-JobHistoryEventHandler notified that forceJobCompletion is (\S+)
 Exception in (\S+)
-Failed to renew lease for \[DFSClient_NONMAPREDUCE_(\S+)\] for (\S+) seconds.  Will retry shortly \.\.\.
+Failed to renew lease for \[(\S+)\] for (\S+) seconds.  Will retry shortly \.\.\.
 Task 'attempt_(\S+)' done\.
 attempt_(\S+): Shuffling to disk since (\S+) is greater than maxSingleShuffleLimit \((\S+)\)
-kvstart = ((\S+)\((\S+)\)|(\S+))(?:; kvend = (\S+)\((\S+)\))?; length = ((\S+)/(\S+)|(\S+))
+kvstart = ((\S+)(?:\((\S+)\))?)(?:; kvend = (\S+)\((\S+)\))?; length = ([^/]+)/?(\S+)?
 fetcher#(\S+) about to shuffle output of map attempt_(\S+) decomp: (\S+) len: (\S+) to (\S+)
 Shuffle failed : local error on this node: (\S+)
 for url=(\S+) sent hash and received reply
@@ -154,6 +153,7 @@ Diagnostics report from attempt_(\S+): AttemptID:attempt_(\S+) Timed out after (
 Diagnostics report from attempt_(\S+): Error: java.net.NoRouteToHostException: No Route to Host from  (\S+) to (\S+) failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see:  http://wiki.apache.org/hadoop/NoRouteToHost
 Diagnostics report from attempt_(\S+): cleanup failed for container container_(\S+) : java.lang.IllegalArgumentException: java.net.UnknownHostException: (\S+)
 Diagnostics report from attempt_(\S+): Error: org.apache.hadoop.util.DiskChecker\$DiskErrorException: Could not find any valid local directory for (\S+)
+Diagnostics report from attempt_(\S+): Container killed by the (\S+).
 attempt_(\S+): Got (\S+) new map-outputs
 DFS chooseDataNode: got # (\S+) (\S+), will wait for (\S+) (\S+).
 Deleting staging directory (\S+) (\S+)
@@ -213,7 +213,7 @@ Exception in getting events
 Exception while unregistering
 DataStreamer Exception
 IPC Server handler 29 on 58622 caught an exception
-Ignoring exception during close for org.apache.hadoop.mapred.MapTask\$NewOutputCollector@(\S+)
+Ignoring exception during close for (\S+)
 Exception running child : org.apache.hadoop.util.DiskChecker\$DiskErrorException: Could not find any valid local directory for (\S+)
 Exception running child : org.apache.hadoop.mapreduce.task.reduce.Shuffle\$ShuffleError: error in shuffle in fetcher#(\S+)
 Task attempt_(\S+) failed : org.apache.hadoop.fs.FSError: java.io.IOException: There is not enough space on the disk
@@ -222,7 +222,7 @@ Exception cleaning up: java.net.NoRouteToHostException: No Route to Host from  (
 When stopping the service JobHistoryEventHandler : org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.net.NoRouteToHostException: No Route to Host from  (\S+) to (\S+) failed on socket timeout exception: java.net.NoRouteToHostException: No route to host: no further information; For more details see:  http://wiki.apache.org/hadoop/NoRouteToHost
 Could not obtain (\S+) from any node: java.io.IOException: No live nodes contain block (\S+) after checking nodes = \[(\S+), (\S+)\], ignoredNodes = (\S+) No live nodes contain current block Block locations: (\S+) (\S+) Dead nodes:  (\S+) (\S+). Will get new block locations from namenode and retry...
 Could not obtain (\S+) from any node: java.io.IOException: No live nodes contain block (\S+) after checking nodes = \[(\S+), (\S+)\], ignoredNodes = (\S+) No live nodes contain current block Block locations: (\S+) (\S+) Dead nodes:  (\S+) (\S+) (\S+). Will get new block locations from namenode and retry...
-IPC Server handler (\S+) on (\S+), call statusUpdate\(attempt_(\S+), org.apache.hadoop.mapred.MapTaskStatus@(\S+)\), rpc version=(\S+), client version=(\S+), methodsFingerPrint=(\S+) from (\S+) Call#(\S+) Retry#(\S+): output error
+IPC Server handler (\S+) on (\S+), call statusUpdate\(attempt_(\S+), (\S+)\), rpc version=(\S+), client version=(\S+), methodsFingerPrint=(\S+) from (\S+) Call#(\S+) Retry#(\S+): output error
 Runnning cleanup for the task
 Error communicating with RM: Could not contact RM after (\S+) milliseconds.
 Could not contact RM after (\S+) milliseconds.
@@ -232,7 +232,7 @@ Assigned from earlierFailedMaps
 Calling handler for JobFinishedEvent
 Spilling map output
 Setting job diagnostics to
-Map output collector class = org.apache.hadoop.mapred.MapTask\$MapOutputBuffer
+Map output collector class = (\S+)
 We are finishing cleanly so this is the last retry
 Waiting for application to be successfully unregistered.
 Starting flush of map output
