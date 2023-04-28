@@ -89,5 +89,5 @@ shouldBlockLocation  ret:(\S+)
 (\S+)\|before compensate: cache step_(\S+)
 (\S+)\|after compensate: cache step_(\S+)
 (\S+)\|REPORT : (\S+) (\S+) (\S+) (\S+)
-onSignalStrengthsChanged signalStrength=SignalStrength: (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+)\|(\S+) level=(\S+) isSuspend=(\S+) levelOld=(\S+),mSignalStrength level=(\S+)
+onSignalStrengthsChanged signalStrength=SignalStrength: (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) (\S+) level=(\S+) isSuspend=(\S+) levelOld=(\S+),mSignalStrength level=(\S+)
 <(\S+) (\S+)> \[(\S+)\] SDK: (\S+) (\S+) (\S+) Level\[(\S+)\] magic[(\S+) (\S+)]:PubEvt_Close Getting a socket[(\S+)] from the Socket-table Failed!
